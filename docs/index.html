@@ -1,0 +1,5032 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- Mirrored from getstream.io/docs/ by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 14 Apr 2015 12:27:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):(o[e]||(o[e]=[]),void o[e].push(n))}var r=e("ee").create(),o={};n.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=(e(2),window),f=u.document,s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"e42b24f74c","agent":"js-agent.newrelic.com/nr-632.min.js","transactionName":"ZFJXNUUDDUYEABVfC10YcxRZARdcCg1OVQtBUhsXXgcURl8HDlUX","applicationID":"12764187","errorBeacon":"bam.nr-data.net","applicationTime":22}</script>
+  <title>Documentation | Stream | Your API for building activity streams</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="cleartype" content="on"><link rel="shortcut icon" href="../images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="../images/favicon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/favicon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/favicon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/favicon-144x144-precomposed.png">
+  <link rel="logo" type="image/svg" href="../images/logo.svg"><meta name="msapplication-TileImage" content="//dvqg2dogggmn6.cloudfront.net/images/favicon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#2B4155"><meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#2B4155">
+  <meta name="apple-mobile-web-app-title" content="Stream"><meta name="google-site-verification" content="-Bmid42XQcLy25NaR9Ct1VQxWJ2SNpMmKCMBdqcNnnE" />
+
+  <meta name="description" content="Stream enables developers to build scalable newsfeed and activity streams in hours instead of weeks.">
+  <meta property="og:title" content="Stream | Your API for building activity streams">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="//dvqg2dogggmn6.cloudfront.net/images/og-image.png">
+  <meta property="og:site_name" content="GetStream.io">
+  <meta property="og:description" content="Stream enables developers to build scalable newsfeed and activity streams in hours instead of weeks.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@getstream_io">
+  <meta name="twitter:domain" content="https://getstream.io">
+  <meta name="twitter:description" content="Stream enables developers to build scalable newsfeed and activity streams in hours instead of weeks.">
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,700,200" rel="stylesheet" type="text/css"><link rel="stylesheet" href="../CACHE/css/c95bd73c04e6.css" type="text/css" /><script type="text/javascript" src="../CACHE/js/353a5e994d36.js"></script><!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//dvqg2dogggmn6.cloudfront.net/vendor/respond.src.js"></script>
+    <link href="//dvqg2dogggmn6.cloudfront.net/respond-proxy.html" id="respond-proxy" rel="respond-proxy">
+    <link href="//dvqg2dogggmn6.cloudfront.net/respond.proxy.gif" id="respond-redirect" rel="respond-redirect">
+    <script src="//dvqg2dogggmn6.cloudfront.net/respond.proxy.js"></script>
+  <![endif]-->
+  <style>@-webkit-viewport{width:device-width}@-moz-viewport{width:device-width}@-ms-viewport{width:device-width}@-o-viewport{width:device-width}@viewport{width:device-width}</style><script>if(navigator.userAgent.match(/IEMobile\/10\.0/)){var msViewportStyle=document.createElement("style");msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));document.querySelector("head").appendChild(msViewportStyle)};</script>
+</head>
+
+  <body id="docs" class="documentation" data-spy="scroll" data-target="#docs-nav" data-offset="100">
+<div id="wrap"><header id="header" class="navbar navbar-inverse navbar-fixed-top header" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navbar-logo" href="../index.html">
+        <h1 class="navbar-logo-title">Stream</h1>
+      </a>
+      </div>
+    <div class="navbar-collapse collapse" id="header-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="../get_started/index.html">Getting started</a>
+        </li>
+        <li class="active">
+          <a href="index.html"><span class="visible-sm-inline">Docs</span><span class="hidden-sm">Documentation</span></a>
+        </li>
+        <li>
+          <a href="../features/index.html">Features</a>
+        </li>
+        <li class="heroku-hidden">
+          <a href="../pricing/index.html">Pricing</a>
+        </li>
+        <li>
+          <a href="../team/index.html">Team</a>
+        </li>
+        <li>
+          <a href="../accounts/login/index.html" data-auth="login">Log in</a>
+        </li>
+        <li>
+          <a href="../accounts/signup/index.html" data-auth="register">Sign up</a>
+        </li>
+        </ul>
+    </div>
+  </div>
+</header>
+
+<section id="page" class="container">
+  <div class="row">
+    <nav class="col-sm-3 nav-sidebar docs-sidebar">
+      <div id="sticky-sidebar" class="navbar navbar-default navbar-smaller" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#docs-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-text">Documentation menu</span>
+        </div>
+        <div id="docs-nav" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="nav-spacer hidden-xs"></li>
+            <li><a href="#introduction"><b>Introduction</b></a></li>
+            <li class="nav-spacer hidden-xs"></li>
+            <li><a href="#api-usage"><b>Api usage</b></a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#add-remove-activities">Add &amp; Remove activities</a></li>
+            <li><a href="#add-many-activities">Batch insert</a></li>
+            <li><a href="#retrieve">Retrieving activities</a></li>
+            <li class="nav-submenu navbar-default">
+              <a href="#submenu-follow">Follow / unfollow</a>
+              <ul class="nav navbar-nav" role="menu">
+                <li><a href="#following">Following feeds</a></li>
+                <li><a href="#unfollowing">Unfollowing feeds</a></li>
+                <li><a href="#reading-feed-followers">Reading feed followers</a></li>
+                <li><a href="#reading-followed-feeds">Reading followed feeds</a></li>
+              </ul>
+            </li>
+            <li><a href="#realtime">Realtime updates</a></li>
+            <li class="nav-spacer hidden-xs"></li>
+            <li><a href="#tutorials"><b>Tutorials</b></a></li>
+            <li class="nav-spacer hidden-xs"></li>
+            <li><a href="#concepts"><b>Concepts</b></a></li>
+            <li><a href="#mobile">iOS &amp; Android</a></li>
+            <li><a href="#creating-feeds">Creating feeds</a></li>
+            <li><a href="#flat-feeds">Flat feeds</a></li>
+            <li><a href="#aggregated-feeds">Aggregated feeds</a></li>
+            <li><a href="#notification-feeds">Notification feeds</a></li>
+            <li><a href="#targetting">Targetting &amp; "TO" support</a></li>
+            <li><a href="#teams">Teams, organizations &amp; topics</a></li>
+            <li><a href="#uniqueness">Uniqueness &amp; Foreign Id</a></li>
+            <li><a href="#what-to-store">What to store</a></li>
+            <li><a href="#frameworks">Framework integrations</a></li>
+            <li><a href="#performance">Performance, Latency &amp; Regions</a></li>
+
+            <li class="nav-submenu navbar-default">
+              <a href="#advanced">Advanced topics</a>
+              <ul class="nav navbar-nav" role="menu">
+                <li><a href="#batch-follow">Batch Follow</a></li>
+                <li><a href="#batch-activity-add">Batch activity add</a></li>
+                <li><a href="#import">Importing data</a></li>
+                <li><a href="#realtime-webhooks">Webhooks</a></li>
+                <li><a href="#realtime-sqs">Amazon SQS</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-spacer hidden-xs"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <article class="col-sm-9 docs-content">
+      <div class="jumbotron page-block text-center text-uppercase">
+        <img class="img-responsive center-block" src="../images/mood-docs.png" alt="Documentation" width="558" height="323">
+        <h1 class="page-title">Documentation</h1>
+        <h2 class="page-subtitle">Build scalable newsfeeds &amp; activity streams in a few hours instead of weeks</h2>
+      </div>
+      <article class="docs-single  hover-enabled" id="introduction">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#introduction" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Introduction to the API
+</h3>
+
+
+
+
+<p>Hi there!</p>
+
+<p>
+	Stream allows you to build scalable newsfeed and activity streams in hours instead of weeks.
+	The documentation will get you up and running quickly. At the moment we have official clients for
+	Ruby, JS/Node, Python, PHP and Java. Furthermore there are also
+	<a href="index.html#frameworks">example apps</a> and <a href="index.html#frameworks">Framework integrations</a> available for Rails, Django and Laravel.
+	Please contact us at support@getstream.io if you have questions
+	or run into trouble with the documentation. Please refer to the <a href="../docs_rest/index.html">REST docs</a> if you want to write your own API client for Stream.
+</p>
+<ul id="docs-client-selector" class="breath-md list-inline list-clients">
+  <li class="text-muted text-bigger text-uppercase"><strong>Select your Client:</strong></li>
+  <li role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby" class="clickable"><img class="tip" src="../images/logo-ruby.png" alt="ruby" width="50" title="ruby" data-toggle="tooltip"></li><li role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js" class="clickable"><img class="tip" src="../images/logo-js.png" alt="js" width="50" title="js" data-toggle="tooltip"></li><li role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python" class="clickable"><img class="tip" src="../images/logo-python.png" alt="python" width="50" title="python" data-toggle="tooltip"></li><li role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php" class="clickable"><img class="tip" src="../images/logo-php.png" alt="php" width="50" title="php" data-toggle="tooltip"></li><li role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java" class="clickable"><img class="tip" src="../images/logo-java.png" alt="java" width="50" title="java" data-toggle="tooltip"></li>
+</ul>
+<p>
+    Next to our official clients, you can find community contributed clients and framework integrations.
+</p>
+<ul id="" class="breath-md list-inline list-clients">
+  <li class="text-muted text-bigger text-uppercase"><strong>Framework integrations:</strong></li>
+  <li><a href="https://github.com/GetStream/stream-django" target="_blank"><img class="tip" src="../images/logo-django.png" alt="Django" width="50" title="Django" data-toggle="tooltip"></a></li>
+  <li><a href="https://github.com/GetStream/stream-rails" target="_blank"><img class="tip" src="../images/logo-rails.png" alt="Ruby on Rails" width="50" title="RoR" data-toggle="tooltip"></a></li>
+  <li><a href="https://github.com/GetStream/stream-laravel" target="_blank"><img class="tip" src="../images/logo-laravel.png" alt="Laravel" width="40" title="Laravel" data-toggle="tooltip"></a></li>
+  <li class="text-muted text-bigger text-uppercase"><strong>Community clients:</strong></li>
+  <li><a href="https://github.com/shawnspeak/stream-net" target="_blank"><img class="tip" src="../images/logo-dotnet.png" alt=".Net" width="50" title=".Net" data-toggle="tooltip"></a></li>
+  <!-- <li><a href="" target="_blank"><img class="tip" src="//dvqg2dogggmn6.cloudfront.net/images/logo-scala.png" alt="Scala" width="80" title="Scala" data-toggle="tooltip"></a></li> -->
+  <li><a href="https://github.com/hyperworks/go-getstream" target="_blank"><img class="tip" src="../images/logo-go.png" alt="Go" width="30" title="Go" data-toggle="tooltip"></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="setup">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#setup" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Setup your client
+</h3>
+
+
+
+
+<p>First install the client as specified below:</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs">gem install &#34;stream-ruby&#34;</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="install-js" data-clipboard-text="gem install &#34;stream-ruby&#34;">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">npm install getstream --save
+bower install getstream</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="install-js" data-clipboard-text="npm install getstream --save
+bower install getstream">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs">pip install stream-python</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="install-js" data-clipboard-text="pip install stream-python">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// install using composer
+{
+    &#34;require&#34;: {
+        &#34;get-stream/stream&#34;: &#34;$VERSION&#34;
+    }
+}</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="install-js" data-clipboard-text="// install using composer
+{
+    &#34;require&#34;: {
+        &#34;get-stream/stream&#34;: &#34;$VERSION&#34;
+    }
+}">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Add the following dependency and repository to your pom.xml file
+
+&lt;dependency&gt;
+    &lt;groupId&gt;io.getstream.client&lt;/groupId&gt;
+    &lt;artifactId&gt;stream-repo-okhttp&lt;/artifactId&gt;
+    &lt;version&gt;0.1-RC2&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="install-js" data-clipboard-text="// Add the following dependency and repository to your pom.xml file
+
+&lt;dependency&gt;
+    &lt;groupId&gt;io.getstream.client&lt;/groupId&gt;
+    &lt;artifactId&gt;stream-repo-okhttp&lt;/artifactId&gt;
+    &lt;version&gt;0.1-RC2&lt;/version&gt;
+&lt;/dependency&gt;">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>The source code can be found on <a href="https://github.com/GetStream">Github</a>.</p>
+<p>To instantiate the client you need an API key and Secret. You can find these on the <a href="../dashboard/index.html">dashboard.</a></p>
+
+
+<p class="alert alert-warning">
+	You're currently not logged in. Quickly <a class="btn btn-sm btn-warning" href="../accounts/signup/index.html" data-auth="register">register</a> using Github to get your API key.
+</p>
+
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Instantiate a new client
+require &#39;stream&#39;
+client = Stream::Client.new(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;)
+# Find your API keys here https://getstream.io/dashboard/</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="setup-js" data-clipboard-text="# Instantiate a new client
+require &#39;stream&#39;
+client = Stream::Client.new(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;)
+# Find your API keys here https://getstream.io/dashboard/">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">var stream = require(&#39;getstream&#39;);
+// Instantiate a new client (server side)
+client = stream.connect(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;, &#39;SITE_ID&#39;);
+// Instantiate a new client (client side)
+client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+// Find your API keys here https://getstream.io/dashboard/</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="setup-js" data-clipboard-text="var stream = require(&#39;getstream&#39;);
+// Instantiate a new client (server side)
+client = stream.connect(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;, &#39;SITE_ID&#39;);
+// Instantiate a new client (client side)
+client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+// Find your API keys here https://getstream.io/dashboard/">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Instantiate a new client
+import stream
+client = stream.connect(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;)
+# Find your API keys here https://getstream.io/dashboard/</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="setup-js" data-clipboard-text="# Instantiate a new client
+import stream
+client = stream.connect(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;)
+# Find your API keys here https://getstream.io/dashboard/">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// Instantiate a new client
+$client = new GetStream\Stream\Client(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;);
+// Find your API keys here https://getstream.io/dashboard/</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="setup-js" data-clipboard-text="// Instantiate a new client
+$client = new GetStream\Stream\Client(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;);
+// Find your API keys here https://getstream.io/dashboard/">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">import io.getstream.client.config.ClientConfiguration;
+import io.getstream.client.model.feeds.Feed;
+
+ClientConfiguration streamConfig = new ClientConfiguration();
+StreamClient streamClient = new StreamClientImpl(streamConfig, &#34;API_KEY&#34;, &#34;API_SECRET&#34;);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="setup-js" data-clipboard-text="import io.getstream.client.config.ClientConfiguration;
+import io.getstream.client.model.feeds.Feed;
+
+ClientConfiguration streamConfig = new ClientConfiguration();
+StreamClient streamClient = new StreamClientImpl(streamConfig, &#34;API_KEY&#34;, &#34;API_SECRET&#34;);">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="add-remove-activities">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#add-remove-activities" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Adding &amp; Removing activities
+</h3>
+
+
+
+
+<p>The activity fields are based on the <a href="http://activitystrea.ms/specs/json/1.0/" target="_blank">activity stream spec</a>.
+This is best explained with an example. For the activity "Alessandro pinned Fuerteventura to his board Places to Visit".
+The actor in this activity is Alessandro, the verb is "pin", the object is Fuerteventura and the board places to visit is the target.
+</p>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Instantiate a feed object
+user_feed_1 = client.feed(&#39;user&#39;, &#39;1&#39;)
+# Add an activity to the feed, where actor, object and target are references to objects (`Alessandro`, `Fuerteventura`, `Places to Visit`)
+activity_data = {:actor =&gt; &#34;User:2&#34;, :verb =&gt; &#34;pin&#34;, :object =&gt; &#34;Place:42&#34;, :target =&gt; &#34;Board:1&#34;}
+activity_response = user_feed_1.add_activity(activity_data)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity-js" data-clipboard-text="# Instantiate a feed object
+user_feed_1 = client.feed(&#39;user&#39;, &#39;1&#39;)
+# Add an activity to the feed, where actor, object and target are references to objects (`Alessandro`, `Fuerteventura`, `Places to Visit`)
+activity_data = {:actor =&gt; &#34;User:2&#34;, :verb =&gt; &#34;pin&#34;, :object =&gt; &#34;Place:42&#34;, :target =&gt; &#34;Board:1&#34;}
+activity_response = user_feed_1.add_activity(activity_data)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Instantiate a feed object server side
+user1 = client.feed(&#39;user&#39;, &#39;1&#39;);
+// Instantiate a feed object client side using a token the generated server side ($token = user1.token;)
+user1 = client.feed(&#39;user&#39;, &#39;1&#39;, $token);
+// Add an activity to the feed
+activity = {&#34;actor&#34;: &#34;User:2&#34;, &#34;verb&#34;: &#34;pin&#34;, &#34;object&#34;: &#34;Place:42&#34;, &#34;target&#34;: &#34;Board:1&#34;};
+user1.addActivity(activity, function(error, response, body) { /* callback */ });</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity-js" data-clipboard-text="// Instantiate a feed object server side
+user1 = client.feed(&#39;user&#39;, &#39;1&#39;);
+// Instantiate a feed object client side using a token the generated server side ($token = user1.token;)
+user1 = client.feed(&#39;user&#39;, &#39;1&#39;, $token);
+// Add an activity to the feed
+activity = {&#34;actor&#34;: &#34;User:2&#34;, &#34;verb&#34;: &#34;pin&#34;, &#34;object&#34;: &#34;Place:42&#34;, &#34;target&#34;: &#34;Board:1&#34;};
+user1.addActivity(activity, function(error, response, body) { /* callback */ });">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Instantiate a feed object
+user_feed_1 = client.feed(&#39;user&#39;, &#39;1&#39;)
+# Add an activity to the feed, where actor, object and target are references to objects (`Alessandro`, `Fuerteventura`, `Places to Visit`)
+activity_data = {&#34;actor&#34;: &#34;User:2&#34;, &#34;verb&#34;: &#34;pin&#34;, &#34;object&#34;: &#34;Place:42&#34;, &#34;target&#34;: &#34;Board:1&#34;}
+activity_response = user_feed_1.add_activity(activity_data)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity-js" data-clipboard-text="# Instantiate a feed object
+user_feed_1 = client.feed(&#39;user&#39;, &#39;1&#39;)
+# Add an activity to the feed, where actor, object and target are references to objects (`Alessandro`, `Fuerteventura`, `Places to Visit`)
+activity_data = {&#34;actor&#34;: &#34;User:2&#34;, &#34;verb&#34;: &#34;pin&#34;, &#34;object&#34;: &#34;Place:42&#34;, &#34;target&#34;: &#34;Board:1&#34;}
+activity_response = user_feed_1.add_activity(activity_data)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// Instantiate a feed object
+$user_feed_1 = $client-&gt;feed(&#39;user&#39;, &#39;1&#39;);
+// Add an activity to the feed, where actor, object and target are references to objects (`Alessandro`, `Fuerteventura`, `Places to Visit`)
+$data = [
+    &#34;actor&#34;=&gt;&#34;User:2&#34;,
+    &#34;verb&#34;=&gt;&#34;pin&#34;,
+    &#34;object&#34;=&gt;&#34;Place:42&#34;,
+    &#34;target&#34;=&gt;&#34;Board:1&#34;
+];
+$user_feed_1-&gt;addActivity($data);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity-js" data-clipboard-text="// Instantiate a feed object
+$user_feed_1 = $client-&gt;feed(&#39;user&#39;, &#39;1&#39;);
+// Add an activity to the feed, where actor, object and target are references to objects (`Alessandro`, `Fuerteventura`, `Places to Visit`)
+$data = [
+    &#34;actor&#34;=&gt;&#34;User:2&#34;,
+    &#34;verb&#34;=&gt;&#34;pin&#34;,
+    &#34;object&#34;=&gt;&#34;Place:42&#34;,
+    &#34;target&#34;=&gt;&#34;Board:1&#34;
+];
+$user_feed_1-&gt;addActivity($data);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Instantiate a feed object
+Feed feed = streamClient.newFeed(&#34;user&#34;, &#34;1&#34;);
+
+// Create an activity service
+FlatActivityServiceImpl&lt;SimpleActivity&gt; flatActivityService = feed.newFlatActivityService(SimpleActivity.class);
+
+// Add an activity to the feed, where actor, object and target are references to objects (`Alessandro`, `Fuerteventura`, `Places to Visit`)
+SimpleActivity activity = new SimpleActivity();
+activity.setActor(&#34;User:2&#34;);
+activity.setObject(&#34;Place:42&#34;);
+activity.setVerb(&#34;pin&#34;);
+activity.setTarget(&#34;Board:1&#34;);
+SimpleActivity response = flatActivityService.addActivity(activity);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity-js" data-clipboard-text="// Instantiate a feed object
+Feed feed = streamClient.newFeed(&#34;user&#34;, &#34;1&#34;);
+
+// Create an activity service
+FlatActivityServiceImpl&lt;SimpleActivity&gt; flatActivityService = feed.newFlatActivityService(SimpleActivity.class);
+
+// Add an activity to the feed, where actor, object and target are references to objects (`Alessandro`, `Fuerteventura`, `Places to Visit`)
+SimpleActivity activity = new SimpleActivity();
+activity.setActor(&#34;User:2&#34;);
+activity.setObject(&#34;Place:42&#34;);
+activity.setVerb(&#34;pin&#34;);
+activity.setTarget(&#34;Board:1&#34;);
+SimpleActivity response = flatActivityService.addActivity(activity);">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>The basic arguments for adding activities are shown below.</p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Default</th>
+            <th>Optional</th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              actor
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The actor performing the activity</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center"></td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              verb
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The verb of the activity</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center"></td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              object
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The object of the activity</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center"></td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              target
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The optional target of the activity</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              time
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The optional time of the activity, isoformat (UTC localtime)</td>
+
+              <td data-title="Default">Current time</td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              to
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;list&#125;</td>
+
+            <td data-title="Desc"><a href="#targetting">See the documentation on Targetting &amp; "TO" support.</a></td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              foreign_id
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">A unique ID from your application for this activity. IE: pin:1 or like:300</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+<p>
+Using the above fields is possible to express any activity.
+</p>
+<p>The id of the activity created will be returned by this APIs endpoint; activity ids are valid Type 1 UUIDs ( <a href="../rfc/rfc4122.txt">rfc4122</a> )
+eg. e561de8f-00f1-11e4-b400-0cc47a024be0
+</p>
+<p>Stream also allows you to specify custom data to add to the activity.
+The example below shows how you would include custom information for a running activity.
+
+</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Create a bit more complex activity
+activity_data = {:actor =&gt; &#39;User:1&#39;, :verb =&gt; &#39;run&#39;, :object =&gt; &#39;Exercise:42&#39;
+    :course =&gt; {:name =&gt; &#39;Golden Gate park&#39;, :distance =&gt; 10},
+    :participants =&gt; [&#39;Thierry&#39;, &#39;Tommaso&#39;],
+    :started_at =&gt; DateTime.now()
+}
+activity_response = user_feed_1.add_activity(activity_data)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_complex-js" data-clipboard-text="# Create a bit more complex activity
+activity_data = {:actor =&gt; &#39;User:1&#39;, :verb =&gt; &#39;run&#39;, :object =&gt; &#39;Exercise:42&#39;
+    :course =&gt; {:name =&gt; &#39;Golden Gate park&#39;, :distance =&gt; 10},
+    :participants =&gt; [&#39;Thierry&#39;, &#39;Tommaso&#39;],
+    :started_at =&gt; DateTime.now()
+}
+activity_response = user_feed_1.add_activity(activity_data)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Create a bit more complex activity
+activity = {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;run&#39;, &#39;object&#39;: &#39;Exercise:42&#39;
+    &#39;course&#39;: {&#39;name&#39;: &#39;Golden Gate park&#39;, &#39;distance&#39;: 10},
+    &#39;participants&#39;: [&#39;Thierry&#39;, &#39;Tommaso&#39;],
+    &#39;started_at&#39;: new Date()
+};
+user1.addActivity(activity, function(error, response, body) { /* callback */ });</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_complex-js" data-clipboard-text="// Create a bit more complex activity
+activity = {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;run&#39;, &#39;object&#39;: &#39;Exercise:42&#39;
+    &#39;course&#39;: {&#39;name&#39;: &#39;Golden Gate park&#39;, &#39;distance&#39;: 10},
+    &#39;participants&#39;: [&#39;Thierry&#39;, &#39;Tommaso&#39;],
+    &#39;started_at&#39;: new Date()
+};
+user1.addActivity(activity, function(error, response, body) { /* callback */ });">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Create a bit more complex activity
+activity_data = {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;run&#39;, &#39;object&#39;: &#39;Exercise:42&#39;
+    &#39;course&#39;: {&#39;name&#39;: &#39;Golden Gate park&#39;, &#39;distance&#39;: 10},
+    &#39;participants&#39;: [&#39;Thierry&#39;, &#39;Tommaso&#39;],
+    &#39;started_at&#39;: datetime.datetime.now()
+};
+user_feed_1.add_activity(activity_data)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_complex-js" data-clipboard-text="# Create a bit more complex activity
+activity_data = {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;run&#39;, &#39;object&#39;: &#39;Exercise:42&#39;
+    &#39;course&#39;: {&#39;name&#39;: &#39;Golden Gate park&#39;, &#39;distance&#39;: 10},
+    &#39;participants&#39;: [&#39;Thierry&#39;, &#39;Tommaso&#39;],
+    &#39;started_at&#39;: datetime.datetime.now()
+};
+user_feed_1.add_activity(activity_data)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// Create a bit more complex activity
+$now = new \DateTime(&#34;now&#34;, new \DateTimeZone(&#39;Pacific/Nauru&#39;));
+$data = [&#39;actor&#39; =&gt; &#39;User:1&#39;, &#39;verb&#39; =&gt; &#39;run&#39;, &#39;object&#39; =&gt; 1,
+    &#39;course&#39; =&gt; [&#39;name&#39;=&gt; &#39;Golden Gate park&#39;, &#39;distance&#39;=&gt; 10],
+    &#39;participants&#39; =&gt; [&#39;Thierry&#39;, &#39;Tommaso&#39;],
+    &#39;started_at&#39; =&gt; $now
+];
+$user_feed_1-&gt;addActivity($data);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_complex-js" data-clipboard-text="// Create a bit more complex activity
+$now = new \DateTime(&#34;now&#34;, new \DateTimeZone(&#39;Pacific/Nauru&#39;));
+$data = [&#39;actor&#39; =&gt; &#39;User:1&#39;, &#39;verb&#39; =&gt; &#39;run&#39;, &#39;object&#39; =&gt; 1,
+    &#39;course&#39; =&gt; [&#39;name&#39;=&gt; &#39;Golden Gate park&#39;, &#39;distance&#39;=&gt; 10],
+    &#39;participants&#39; =&gt; [&#39;Thierry&#39;, &#39;Tommaso&#39;],
+    &#39;started_at&#39; =&gt; $now
+];
+$user_feed_1-&gt;addActivity($data);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// You can add custom data to your activities
+// Here&#39;s an example on how to do it: https://github.com/GetStream/stream-java/blob/master/stream-repo-apache/src/test/java/io/getstream/client/example/mixtype/MixedType.java</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_complex-js" data-clipboard-text="// You can add custom data to your activities
+// Here&#39;s an example on how to do it: https://github.com/GetStream/stream-java/blob/master/stream-repo-apache/src/test/java/io/getstream/client/example/mixtype/MixedType.java">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>
+	The server returns the serialized activity including the activity id.
+</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs">{&#34;actor&#34;=&gt;&#34;User:1&#34;, &#34;course&#34;=&gt;{&#34;distance&#34;=&gt;10, &#34;name&#34;=&gt;&#34;Golden Gate park&#34;}, &#34;id&#34;=&gt;&#34;ef696c12-69ab-11e4-8080-80003644b625&#34;, &#34;object&#34;=&gt;&#34;Exercise:42&#34;, &#34;participants&#34;=&gt;[&#34;Thierry&#34;, &#34;Tommaso&#34;], &#34;started_at&#34;=&gt;&#34;2014-11-11T15:06:16+01:00&#34;, &#34;target&#34;=&gt;nil, &#34;time&#34;=&gt;&#34;2014-11-11T14:06:30.494&#34;, &#34;verb&#34;=&gt;&#34;run&#34;} </code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_response-js" data-clipboard-text="{&#34;actor&#34;=&gt;&#34;User:1&#34;, &#34;course&#34;=&gt;{&#34;distance&#34;=&gt;10, &#34;name&#34;=&gt;&#34;Golden Gate park&#34;}, &#34;id&#34;=&gt;&#34;ef696c12-69ab-11e4-8080-80003644b625&#34;, &#34;object&#34;=&gt;&#34;Exercise:42&#34;, &#34;participants&#34;=&gt;[&#34;Thierry&#34;, &#34;Tommaso&#34;], &#34;started_at&#34;=&gt;&#34;2014-11-11T15:06:16+01:00&#34;, &#34;target&#34;=&gt;nil, &#34;time&#34;=&gt;&#34;2014-11-11T14:06:30.494&#34;, &#34;verb&#34;=&gt;&#34;run&#34;} ">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">{&#34;actor&#34;=&gt;&#34;User:1&#34;, &#34;course&#34;=&gt;{&#34;distance&#34;=&gt;10, &#34;name&#34;=&gt;&#34;Golden Gate park&#34;}, &#34;id&#34;=&gt;&#34;ef696c12-69ab-11e4-8080-80003644b625&#34;, &#34;object&#34;=&gt;&#34;Exercise:42&#34;, &#34;participants&#34;=&gt;[&#34;Thierry&#34;, &#34;Tommaso&#34;], &#34;started_at&#34;=&gt;&#34;2014-11-11T15:06:16+01:00&#34;, &#34;target&#34;=&gt;nil, &#34;time&#34;=&gt;&#34;2014-11-11T14:06:30.494&#34;, &#34;verb&#34;=&gt;&#34;run&#34;} </code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_response-js" data-clipboard-text="{&#34;actor&#34;=&gt;&#34;User:1&#34;, &#34;course&#34;=&gt;{&#34;distance&#34;=&gt;10, &#34;name&#34;=&gt;&#34;Golden Gate park&#34;}, &#34;id&#34;=&gt;&#34;ef696c12-69ab-11e4-8080-80003644b625&#34;, &#34;object&#34;=&gt;&#34;Exercise:42&#34;, &#34;participants&#34;=&gt;[&#34;Thierry&#34;, &#34;Tommaso&#34;], &#34;started_at&#34;=&gt;&#34;2014-11-11T15:06:16+01:00&#34;, &#34;target&#34;=&gt;nil, &#34;time&#34;=&gt;&#34;2014-11-11T14:06:30.494&#34;, &#34;verb&#34;=&gt;&#34;run&#34;} ">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs">{&#34;actor&#34;=&gt;&#34;User:1&#34;, &#34;course&#34;=&gt;{&#34;distance&#34;=&gt;10, &#34;name&#34;=&gt;&#34;Golden Gate park&#34;}, &#34;id&#34;=&gt;&#34;ef696c12-69ab-11e4-8080-80003644b625&#34;, &#34;object&#34;=&gt;&#34;Exercise:42&#34;, &#34;participants&#34;=&gt;[&#34;Thierry&#34;, &#34;Tommaso&#34;], &#34;started_at&#34;=&gt;&#34;2014-11-11T15:06:16+01:00&#34;, &#34;target&#34;=&gt;nil, &#34;time&#34;=&gt;&#34;2014-11-11T14:06:30.494&#34;, &#34;verb&#34;=&gt;&#34;run&#34;} </code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_response-js" data-clipboard-text="{&#34;actor&#34;=&gt;&#34;User:1&#34;, &#34;course&#34;=&gt;{&#34;distance&#34;=&gt;10, &#34;name&#34;=&gt;&#34;Golden Gate park&#34;}, &#34;id&#34;=&gt;&#34;ef696c12-69ab-11e4-8080-80003644b625&#34;, &#34;object&#34;=&gt;&#34;Exercise:42&#34;, &#34;participants&#34;=&gt;[&#34;Thierry&#34;, &#34;Tommaso&#34;], &#34;started_at&#34;=&gt;&#34;2014-11-11T15:06:16+01:00&#34;, &#34;target&#34;=&gt;nil, &#34;time&#34;=&gt;&#34;2014-11-11T14:06:30.494&#34;, &#34;verb&#34;=&gt;&#34;run&#34;} ">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">{&#34;actor&#34;=&gt;&#34;User:1&#34;, &#34;course&#34;=&gt;{&#34;distance&#34;=&gt;10, &#34;name&#34;=&gt;&#34;Golden Gate park&#34;}, &#34;id&#34;=&gt;&#34;ef696c12-69ab-11e4-8080-80003644b625&#34;, &#34;object&#34;=&gt;&#34;Exercise:42&#34;, &#34;participants&#34;=&gt;[&#34;Thierry&#34;, &#34;Tommaso&#34;], &#34;started_at&#34;=&gt;&#34;2014-11-11T15:06:16+01:00&#34;, &#34;target&#34;=&gt;nil, &#34;time&#34;=&gt;&#34;2014-11-11T14:06:30.494&#34;, &#34;verb&#34;=&gt;&#34;run&#34;} </code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_response-js" data-clipboard-text="{&#34;actor&#34;=&gt;&#34;User:1&#34;, &#34;course&#34;=&gt;{&#34;distance&#34;=&gt;10, &#34;name&#34;=&gt;&#34;Golden Gate park&#34;}, &#34;id&#34;=&gt;&#34;ef696c12-69ab-11e4-8080-80003644b625&#34;, &#34;object&#34;=&gt;&#34;Exercise:42&#34;, &#34;participants&#34;=&gt;[&#34;Thierry&#34;, &#34;Tommaso&#34;], &#34;started_at&#34;=&gt;&#34;2014-11-11T15:06:16+01:00&#34;, &#34;target&#34;=&gt;nil, &#34;time&#34;=&gt;&#34;2014-11-11T14:06:30.494&#34;, &#34;verb&#34;=&gt;&#34;run&#34;} ">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>
+	You can remove activities by specifying the activities' ID.
+	Alternatively if you've specified a foreign_id when creating the activity, you can remove it using the foreign id.
+</p>
+<div class="alert alert-info">Note: When you remove by foreign_id field, <b>all</b> activities in the feed with the provided foreign_id will be removed.<br></div>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Remove an activity by its id
+user_feed_1.remove_activity(&#39;e561de8f-00f1-11e4-b400-0cc47a024be0&#39;)
+
+# Remove activities with foreign_id &#39;tweet:1&#39;
+user_feed_1.remove_activity(&#39;tweet:1&#39;, foreign_id=true)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="remove_activity-js" data-clipboard-text="# Remove an activity by its id
+user_feed_1.remove_activity(&#39;e561de8f-00f1-11e4-b400-0cc47a024be0&#39;)
+
+# Remove activities with foreign_id &#39;tweet:1&#39;
+user_feed_1.remove_activity(&#39;tweet:1&#39;, foreign_id=true)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Remove an activity by its id
+user1.removeActivity(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;);
+// Remove activities foreign_id &#39;tweet:1&#39;
+user1.removeActivity({foreignId: &#39;tweet:1&#39;});</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="remove_activity-js" data-clipboard-text="// Remove an activity by its id
+user1.removeActivity(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;);
+// Remove activities foreign_id &#39;tweet:1&#39;
+user1.removeActivity({foreignId: &#39;tweet:1&#39;});">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Remove an activity by its id
+user_feed_1.remove_activity(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;)
+# Remove activities with foreign_id &#39;tweet:1&#39;
+user_feed_1.remove_activity(foreign_id=&#39;tweet:1&#39;)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="remove_activity-js" data-clipboard-text="# Remove an activity by its id
+user_feed_1.remove_activity(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;)
+# Remove activities with foreign_id &#39;tweet:1&#39;
+user_feed_1.remove_activity(foreign_id=&#39;tweet:1&#39;)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// Remove an activity by its id
+$user_feed_1-&gt;removeActivity(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;);
+
+// Remove activities with foreign_id &#39;tweet:1&#39;
+$user_feed_1-&gt;removeActivity(&#39;tweet:1&#39;, true)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="remove_activity-js" data-clipboard-text="// Remove an activity by its id
+$user_feed_1-&gt;removeActivity(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;);
+
+// Remove activities with foreign_id &#39;tweet:1&#39;
+$user_feed_1-&gt;removeActivity(&#39;tweet:1&#39;, true)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Remove an activity by its id
+feed.deleteActivity(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;);
+
+// Remove activities by their foreign_id
+feed.deleteActivityByForeignId(&#34;tweet:1&#34;);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="remove_activity-js" data-clipboard-text="// Remove an activity by its id
+feed.deleteActivity(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;);
+
+// Remove activities by their foreign_id
+feed.deleteActivityByForeignId(&#34;tweet:1&#34;);">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="add-many-activities">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#add-many-activities" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Batch insert
+</h3>
+
+
+
+
+<p>Multiple activities can be added with a single batch insert operation. This is very convenient when importing data to GetStream.</p>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs">activities = [
+    {:actor =&gt; &#39;User:1&#39;, :verb =&gt; &#39;tweet&#39;, :object =&gt; &#39;Tweet:1&#39;},
+    {:actor =&gt; &#39;User:2&#39;, :verb =&gt; &#39;watch&#39;, :object =&gt; &#39;Movie:1&#39;}
+]
+user_feed_1.add_activities(activities)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_many_activities-js" data-clipboard-text="activities = [
+    {:actor =&gt; &#39;User:1&#39;, :verb =&gt; &#39;tweet&#39;, :object =&gt; &#39;Tweet:1&#39;},
+    {:actor =&gt; &#39;User:2&#39;, :verb =&gt; &#39;watch&#39;, :object =&gt; &#39;Movie:1&#39;}
+]
+user_feed_1.add_activities(activities)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">activities = [
+    {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;tweet&#39;, &#39;object&#39;: &#39;Tweet:1&#39;},
+    {&#39;actor&#39;: &#39;User:2&#39;, &#39;verb&#39;: &#39;watch&#39;, &#39;object&#39;: &#39;Movie:1&#39;}
+];
+user1.addActivities(activities, function(error, response, body) { /* callback */ });</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_many_activities-js" data-clipboard-text="activities = [
+    {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;tweet&#39;, &#39;object&#39;: &#39;Tweet:1&#39;},
+    {&#39;actor&#39;: &#39;User:2&#39;, &#39;verb&#39;: &#39;watch&#39;, &#39;object&#39;: &#39;Movie:1&#39;}
+];
+user1.addActivities(activities, function(error, response, body) { /* callback */ });">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs">activities = [
+    {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;tweet&#39;, &#39;object&#39;: &#39;Tweet:1&#39;},
+    {&#39;actor&#39;: &#39;User:2&#39;, &#39;verb&#39;: &#39;watch&#39;, &#39;object&#39;: &#39;Movie:1&#39;}
+]
+user_feed_1.add_activities(activities)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_many_activities-js" data-clipboard-text="activities = [
+    {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;tweet&#39;, &#39;object&#39;: &#39;Tweet:1&#39;},
+    {&#39;actor&#39;: &#39;User:2&#39;, &#39;verb&#39;: &#39;watch&#39;, &#39;object&#39;: &#39;Movie:1&#39;}
+]
+user_feed_1.add_activities(activities)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">$activities = array(
+    array(&#39;actor&#39; =&gt; &#39;User:1&#39;, &#39;verb&#39; =&gt; &#39;tweet&#39;, &#39;object&#39; =&gt; &#39;Tweet:1&#39;),
+    array(&#39;actor&#39; =&gt; &#39;User:2&#39;, &#39;verb&#39; =&gt; &#39;watch&#39;, &#39;object&#39; =&gt; &#39;Movie:1&#39;)
+);
+$user_feed_1-&gt;addActivities($activities);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_many_activities-js" data-clipboard-text="$activities = array(
+    array(&#39;actor&#39; =&gt; &#39;User:1&#39;, &#39;verb&#39; =&gt; &#39;tweet&#39;, &#39;object&#39; =&gt; &#39;Tweet:1&#39;),
+    array(&#39;actor&#39; =&gt; &#39;User:2&#39;, &#39;verb&#39; =&gt; &#39;watch&#39;, &#39;object&#39; =&gt; &#39;Movie:1&#39;)
+);
+$user_feed_1-&gt;addActivities($activities);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Not supported yet</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_many_activities-js" data-clipboard-text="// Not supported yet">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+            <th>Type</th>
+            <th>Description</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              activities
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;list&#125;</td>
+
+            <td data-title="Desc">The list of activities to be added (as specified on <a href="#add-remove-activities">Add &amp; Remove activities</a>)</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+<p>The API will return a list containing the activity ids.</p>
+
+<div class="alert alert-info">Note: If you are importing your data for the first time, we suggest you to create the <a href="index.html#following">follow</a> relationships <b>after</b> the activity import.<br></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="retrieve">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#retrieve" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Retrieving activities
+</h3>
+
+
+
+
+<p>
+	The example below explains how to retrieve the activities in the feed.
+</p>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Get activities from 5 to 10 (slow pagination)
+result = user_feed_1.get(:limit=&gt;5, :offset=&gt;5)
+
+# Get 5 activities with id less than the given UUID (Recommended &amp; faster)
+result = user_feed_1.get(:limit=&gt;5, :id_lt=&gt;&#39;e561de8f-00f1-11e4-b400-0cc47a024be0&#39;)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="retrieve_activities-js" data-clipboard-text="# Get activities from 5 to 10 (slow pagination)
+result = user_feed_1.get(:limit=&gt;5, :offset=&gt;5)
+
+# Get 5 activities with id less than the given UUID (Recommended &amp; faster)
+result = user_feed_1.get(:limit=&gt;5, :id_lt=&gt;&#39;e561de8f-00f1-11e4-b400-0cc47a024be0&#39;)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Get 5 activities with id less than the given UUID (Recommended &amp; faster)
+user1.get({limit:5, id_lt:&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;}, function(error, response, body) { /* callback */ });
+
+// Get activities from 5 to 10 (slow pagination)
+user1.get({limit:5, offset:5}, function(error, response, body) { /* callback */ });
+</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="retrieve_activities-js" data-clipboard-text="// Get 5 activities with id less than the given UUID (Recommended &amp; faster)
+user1.get({limit:5, id_lt:&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;}, function(error, response, body) { /* callback */ });
+
+// Get activities from 5 to 10 (slow pagination)
+user1.get({limit:5, offset:5}, function(error, response, body) { /* callback */ });
+">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Get activities from 5 to 10 (slow pagination)
+result = user_feed_1.get(limit=5, offset=5)
+
+# Get 5 activities with id less than the given UUID (Recommended &amp; faster)
+result = user_feed_1.get(limit=5, id_lt=&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;)
+</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="retrieve_activities-js" data-clipboard-text="# Get activities from 5 to 10 (slow pagination)
+result = user_feed_1.get(limit=5, offset=5)
+
+# Get 5 activities with id less than the given UUID (Recommended &amp; faster)
+result = user_feed_1.get(limit=5, id_lt=&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;)
+">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs"># Get activities from 5 to 10 using limit and offset
+$results = $user_feed_1-&gt;getActivities(5, 10);
+
+# Get 5 activities with id less than the given UUID (Recommended &amp; faster)
+$results = $user_feed_1-&gt;getActivities(0, 5, id_lte=$last_id);
+</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="retrieve_activities-js" data-clipboard-text="# Get activities from 5 to 10 using limit and offset
+$results = $user_feed_1-&gt;getActivities(5, 10);
+
+# Get 5 activities with id less than the given UUID (Recommended &amp; faster)
+$results = $user_feed_1-&gt;getActivities(0, 5, id_lte=$last_id);
+">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Get activities from 5 to 10 (using offset pagination)
+FeedFilter filter = new FeedFilter.Builder().withLimit(5).withOffset(5).build();
+List&lt;SimpleActivity&gt; activities = flatActivityService.getActivities(filter).getResults();
+
+// Filter on an id less than the given UUID
+aid = &#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;;
+FeedFilter filter = new FeedFilter.Builder().withIdLowerThan(aid).withLimit(5).build();
+List&lt;SimpleActivity&gt; activities = flatActivityService.getActivities(filter).getResults();</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="retrieve_activities-js" data-clipboard-text="// Get activities from 5 to 10 (using offset pagination)
+FeedFilter filter = new FeedFilter.Builder().withLimit(5).withOffset(5).build();
+List&lt;SimpleActivity&gt; activities = flatActivityService.getActivities(filter).getResults();
+
+// Filter on an id less than the given UUID
+aid = &#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;;
+FeedFilter filter = new FeedFilter.Builder().withIdLowerThan(aid).withLimit(5).build();
+List&lt;SimpleActivity&gt; activities = flatActivityService.getActivities(filter).getResults();">Copy</button>
+        </div>
+
+
+	  </div>
+
+<p>
+	The activities in the feed are sorted on a UUID based on time. <b>We recommend you paginate using id_lt</b>.
+	This performs far better than traditional offset based pagination.
+	The full list of supported paramaters is included below.
+</p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Default</th>
+            <th>Optional</th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              limit
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">The amount of activities requested from the APIs</td>
+
+              <td data-title="Default">25</td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              id_gte
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">Filter the feed on ids greater than or equal to the given value</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              id_gt
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">Filter the feed on ids greater than the given value</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              id_lte
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">Filter the feed on ids smaller than or equal to the given value</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              id_lt
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">Filter the feed on ids smaller than the given value</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              offset
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">The offset</td>
+
+              <td data-title="Default"></td>
+
+
+              <td data-title="Optional" class="text-center">&check;</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="following">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#following" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Following feeds
+</h3>
+
+
+
+<p>Allows a feed to follow the feed specified in the target parameter.<p>
+<p>By default the most recent 300 existing activities in the target feed will be added to the follower feed ( asynchronously ), this can be changed via the activity_copy_limit parameter<p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+            <th>Type</th>
+            <th>Description</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              feed
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The feed id</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              target
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The feed id of the target feed</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              activity_copy_limit
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;integer&#125;</td>
+
+            <td data-title="Desc">How many activities should be copied from the target feed</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Follow feed 42
+user_feed_1.follow(&#39;flat&#39;, &#39;42&#39;)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="following-js" data-clipboard-text="# Follow feed 42
+user_feed_1.follow(&#39;flat&#39;, &#39;42&#39;)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Follow flat 42
+user1.follow(&#39;flat&#39;, &#39;42&#39;);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="following-js" data-clipboard-text="// Follow flat 42
+user1.follow(&#39;flat&#39;, &#39;42&#39;);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Follow feed 42
+user_feed_1.follow(&#39;flat&#39;, &#39;42&#39;)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="following-js" data-clipboard-text="# Follow feed 42
+user_feed_1.follow(&#39;flat&#39;, &#39;42&#39;)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs"># Follow feed 42
+$user_feed_1-&gt;followFeed(&#39;flat&#39;, &#39;42&#39;);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="following-js" data-clipboard-text="# Follow feed 42
+$user_feed_1-&gt;followFeed(&#39;flat&#39;, &#39;42&#39;);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Follow feed 42
+feed.follow(flat&#34;, &#34;42&#34;);
+</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="following-js" data-clipboard-text="// Follow feed 42
+feed.follow(flat&#34;, &#34;42&#34;);
+">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="unfollowing">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#unfollowing" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Unfollowing feeds
+</h3>
+
+
+
+<p>Allows a feed to stop following the feed specified in the target parameter.<p>
+<p>Existing activities in the feed coming from the target feed will be purged ( asynchronously )<p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+            <th>Type</th>
+            <th>Description</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              feed
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The feed id</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              target
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The feed id of the target feed</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Stop following feed 42
+user_feed_1.unfollow(&#39;flat&#39;, &#39;42&#39;)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="unfollowing-js" data-clipboard-text="# Stop following feed 42
+user_feed_1.unfollow(&#39;flat&#39;, &#39;42&#39;)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Stop following feed 42
+user1.unfollow(&#39;flat&#39;, &#39;42&#39;);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="unfollowing-js" data-clipboard-text="// Stop following feed 42
+user1.unfollow(&#39;flat&#39;, &#39;42&#39;);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Stop following feed 42
+user1.unfollow(&#39;flat&#39;, &#39;42&#39;)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="unfollowing-js" data-clipboard-text="# Stop following feed 42
+user1.unfollow(&#39;flat&#39;, &#39;42&#39;)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs"># Stop following feed 42
+user1-&gt;unfollow(&#39;flat&#39;, &#39;42&#39;);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="unfollowing-js" data-clipboard-text="# Stop following feed 42
+user1-&gt;unfollow(&#39;flat&#39;, &#39;42&#39;);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Stop following feed 42
+feed.unfollow(flat&#34;, &#34;42&#34;);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="unfollowing-js" data-clipboard-text="// Stop following feed 42
+feed.unfollow(flat&#34;, &#34;42&#34;);">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="reading-feed-followers">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#reading-feed-followers" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Reading feed followers
+</h3>
+
+
+
+<p>Returns a paginated list of the given feed's followers</p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+            <th>Type</th>
+            <th>Description</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              page
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">The page to retrieve, default 1</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              limit
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">Amount of results per request, defaults to 25, max 100</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># list followers
+user_feed_1.followers(0, 10)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followers-js" data-clipboard-text="# list followers
+user_feed_1.followers(0, 10)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// List followers
+user1.followers({limit: &#39;10&#39;, offset: &#39;10&#39;});</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followers-js" data-clipboard-text="// List followers
+user1.followers({limit: &#39;10&#39;, offset: &#39;10&#39;});">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># list followers
+user_feed_1.followers(offset=0, limit=10)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followers-js" data-clipboard-text="# list followers
+user_feed_1.followers(offset=0, limit=10)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// list followers
+$user_feed_1-&gt;followers(0, 10);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followers-js" data-clipboard-text="// list followers
+$user_feed_1-&gt;followers(0, 10);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Retrieve first 10 followers of a feed
+FeedFilter filter = new FeedFilter.Builder().withLimit(10).build();
+List&lt;FeedFollow&gt; followersPaged = feed.getFollowers(filter);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followers-js" data-clipboard-text="// Retrieve first 10 followers of a feed
+FeedFilter filter = new FeedFilter.Builder().withLimit(10).build();
+List&lt;FeedFollow&gt; followersPaged = feed.getFollowers(filter);">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="reading-followed-feeds">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#reading-followed-feeds" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Reading following feeds
+</h3>
+
+
+
+<p>Returns a paginated list of the feeds which are following the feed.
+<p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+            <th>Type</th>
+            <th>Description</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              filter
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;string&#125;</td>
+
+            <td data-title="Desc">The comma separated list of feeds to filter results on</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              page
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">The page to retrieve, default 1</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              limit
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;int&#125;</td>
+
+            <td data-title="Desc">Amount of results per request, defaults to 25, max 100</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Retrieve 10 feeds followed by user_feed_1
+user_feed_1.following(10)
+
+# Retrieve 10 feeds followed by user_feed_1 starting from the 11th
+user_feed_1.following(10, 10)
+
+# Check if user_feed_1 follows specific feeds
+user_feed_1.following(0, 2, filter=[&#39;user:42&#39;, &#39;user:43&#39;])</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followings-js" data-clipboard-text="# Retrieve 10 feeds followed by user_feed_1
+user_feed_1.following(10)
+
+# Retrieve 10 feeds followed by user_feed_1 starting from the 11th
+user_feed_1.following(10, 10)
+
+# Check if user_feed_1 follows specific feeds
+user_feed_1.following(0, 2, filter=[&#39;user:42&#39;, &#39;user:43&#39;])">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Retrieve last 10 feeds followed by user_feed_1
+user1.following({offset: 0, limit: 10});
+
+// Retrieve 10 feeds followed by user_feed_1 starting from the 11th
+user1.following({offset: 10, limit: 10});
+
+// Check if user1 follows specific feeds
+user1.following({offset: 0, limit: 2, filter: [&#39;user:42&#39;, &#39;user:43&#39;]})</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followings-js" data-clipboard-text="// Retrieve last 10 feeds followed by user_feed_1
+user1.following({offset: 0, limit: 10});
+
+// Retrieve 10 feeds followed by user_feed_1 starting from the 11th
+user1.following({offset: 10, limit: 10});
+
+// Check if user1 follows specific feeds
+user1.following({offset: 0, limit: 2, filter: [&#39;user:42&#39;, &#39;user:43&#39;]})">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Retrieve last 10 feeds followed by user_feed_1
+user_feed_1.following(offset=0, limit=10)
+
+# Retrieve 10 feeds followed by user_feed_1 starting from the 11th
+user_feed_1.following(offset=10, limit=10)
+
+# Check if user_feed_1 follows specific feeds
+user_feed_1.following(offset=0, limit=2, feeds=[&#39;user:42&#39;, &#39;user:43&#39;])</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followings-js" data-clipboard-text="# Retrieve last 10 feeds followed by user_feed_1
+user_feed_1.following(offset=0, limit=10)
+
+# Retrieve 10 feeds followed by user_feed_1 starting from the 11th
+user_feed_1.following(offset=10, limit=10)
+
+# Check if user_feed_1 follows specific feeds
+user_feed_1.following(offset=0, limit=2, feeds=[&#39;user:42&#39;, &#39;user:43&#39;])">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// Retrieve 10 feeds followed by $user_feed_1
+$user_feed_1-&gt;following(0, 10);
+
+// Retrieve 10 feeds followed by $user_feed_1 starting from the 10th (2nd page)
+$user_feed_1-&gt;following(10, 20);
+
+// Check if $user_feed_1 follows specific feeds
+$user_feed_1-&gt;following(0, 2, [&#39;user:42&#39;, &#39;user:43&#39;]);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followings-js" data-clipboard-text="// Retrieve 10 feeds followed by $user_feed_1
+$user_feed_1-&gt;following(0, 10);
+
+// Retrieve 10 feeds followed by $user_feed_1 starting from the 10th (2nd page)
+$user_feed_1-&gt;following(10, 20);
+
+// Check if $user_feed_1 follows specific feeds
+$user_feed_1-&gt;following(0, 2, [&#39;user:42&#39;, &#39;user:43&#39;]);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Retrieve first 10 followers of a feed
+FeedFilter filter = new FeedFilter.Builder().withLimit(10).build();
+List&lt;FeedFollow&gt; followingPaged = feed.getFollowing(filter);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="reading-feed-followings-js" data-clipboard-text="// Retrieve first 10 followers of a feed
+FeedFilter filter = new FeedFilter.Builder().withLimit(10).build();
+List&lt;FeedFollow&gt; followingPaged = feed.getFollowing(filter);">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="realtime">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#realtime" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Realtime updates
+</h3>
+
+
+
+<p>
+	Stream allows you to listen to feed changes in realtime.
+</p>
+<div class="alert alert-info">Note: To receive realtime notifications for a feed, you need to enable the feature via the <a href="../dashboard/index.html">Dashboard</a>'s Feed configuration page.</div>
+
+<p>
+	At this point you can only subscribe to changes in realtime with javascript using GetStream's js client. If you are not using it already, you can obtain it from <a href="../GetStream/stream-js/blob/master/dist/js_min/getstream.html">here</a>.
+</p>
+
+<p>
+    Once you have included the js client in your pages you can subscribe to real time notifications this way:
+</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="html code-hljs">&lt;script type=&#34;text/javascript&#34; src=&#34;/path/to/getstream.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+    var user1 = client.feed(&#39;user&#39;, &#39;1&#39;, &#39;&lt;%= user_feed_1.token %&gt;&#39;);
+
+    function callback(data) {
+        console.log(data);
+    }
+
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1.subscribe(callback).then(function(){}, failCallback);
+&lt;/script&gt;</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="realtime-js" data-clipboard-text="&lt;script type=&#34;text/javascript&#34; src=_/path/to/getstream.js___/script_.html
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+    var user1 = client.feed(&#39;user&#39;, &#39;1&#39;, &#39;&lt;%= user_feed_1.token %&gt;&#39;);
+
+    function callback(data) {
+        console.log(data);
+    }
+
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1.subscribe(callback).then(function(){}, failCallback);
+&lt;/script&gt;">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="html code-hljs">&lt;script type=&#34;text/javascript&#34;&gt;
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1 = client.feed(&#39;user&#39;, &#39;1&#39;, token);
+    user1.subscribe(function callback(data) {
+        alert(data);
+    }).then(function(){}, failCallback);
+&lt;/script&gt;</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="realtime-js" data-clipboard-text="&lt;script type=&#34;text/javascript&#34;&gt;
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1 = client.feed(&#39;user&#39;, &#39;1&#39;, token);
+    user1.subscribe(function callback(data) {
+        alert(data);
+    }).then(function(){}, failCallback);
+&lt;/script&gt;">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="html code-hljs">&lt;script type=&#34;text/javascript&#34; src=&#34;/path/to/getstream.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+    var user1 = client.feed(&#39;user&#39;, &#39;1&#39;, &#39;{{ user_feed_1.token }}&#39;);
+
+    function callback(data) {
+        console.log(data);
+    }
+
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1.subscribe(callback).then(function(){}, failCallback);
+&lt;/script&gt;</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="realtime-js" data-clipboard-text="&lt;script type=&#34;text/javascript&#34; src=_/path/to/getstream.js___/script_.html
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+    var user1 = client.feed(&#39;user&#39;, &#39;1&#39;, &#39;{{ user_feed_1.token }}&#39;);
+
+    function callback(data) {
+        console.log(data);
+    }
+
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1.subscribe(callback).then(function(){}, failCallback);
+&lt;/script&gt;">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="html code-hljs">&lt;script type=&#34;text/javascript&#34; src=&#34;/path/to/getstream.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+    var user1 = client.feed(&#39;user&#39;, &#39;1&#39;, &#39;&lt;?php echo($user_feed_1-&gt;getToken()); ?&gt;&#39;);
+
+    function callback(data) {
+        console.log(data);
+    }
+
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1.subscribe(callback).then(function(){}, failCallback);
+&lt;/script&gt;</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="realtime-js" data-clipboard-text="&lt;script type=&#34;text/javascript&#34; src=_/path/to/getstream.js___/script_.html
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+    var user1 = client.feed(&#39;user&#39;, &#39;1&#39;, &#39;&lt;?php echo($user_feed_1-&gt;getToken()); ?&gt;&#39;);
+
+    function callback(data) {
+        console.log(data);
+    }
+
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1.subscribe(callback).then(function(){}, failCallback);
+&lt;/script&gt;">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="html code-hljs">// feedToken is generated server-side
+String token = feed.getToken();
+
+// and used in your client-side JS code
+&lt;script type=&#34;text/javascript&#34; src=&#34;/path/to/getstream.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+    var user1 = client.feed(&#39;user&#39;, &#39;1&#39;, &#39;feedToken&#39;);
+
+    function callback(data) {
+        console.log(data);
+    }
+
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1.subscribe(callback).then(function(){}, failCallback);
+&lt;/script&gt;</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="realtime-js" data-clipboard-text="// feedToken is generated server-side
+String token = feed.getToken();
+
+// and used in your client-side JS code
+&lt;script type=&#34;text/javascript&#34; src=_/path/to/getstream.js___/script_.html
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var client = stream.connect(&#39;YOUR_API_KEY&#39;, null, &#39;SITE_ID&#39;);
+    var user1 = client.feed(&#39;user&#39;, &#39;1&#39;, &#39;feedToken&#39;);
+
+    function callback(data) {
+        console.log(data);
+    }
+
+    function failCallback(data) {
+        alert(&#39;something went wrong, check the console logs&#39;);
+        console.log(data);
+    }
+
+    user1.subscribe(callback).then(function(){}, failCallback);
+&lt;/script&gt;">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>The data returned is different per feed type. Notification feeds include unread and unseen counts.
+	For the flat feed we return activities and for the aggregated &amp; notification feeds we return aggregated activities.
+	A full example is shown below:
+</p>
+
+<pre><code class="code-hljs javascript">// Realtime notification data format
+{
+    "data": {
+        "deleted": "array activities or aggregated activities",
+        "new": "array activities or aggregated activities",
+        "unread":"int only sent for notification feeds",
+        "unseen":"int only sent for notification feeds",
+        "published_at":"time in iso format",
+    },
+    "channel":"",
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+
+      <article class="docs-single  hover-enabled" id="tutorials">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#tutorials" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Tutorials
+</h3>
+
+
+
+
+<p>
+	We're currently working on a few tutorials which clarify how everything fits together.
+	The first tutorial teaches you how to write a scalable twitter type of app.
+</p>
+
+<ul>
+	<li><a href="https://gist.github.com/tbarbugli/97bf26f400ecf1443ef6">Scalable Twitter Tutorial</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+
+      <article class="docs-single  hover-enabled" id="mobile">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#mobile" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+iOS &amp; Android
+</h3>
+
+<p>
+  Many of our users build apps which integrate with native iOS and Android apps. The best approach is to use Stream's API from your server side codebase. We currently support Ruby, Python, PHP, Java and Node. Subsequently you enrich and forward this data via your own mobile API. In general we don't recommend writing data to Stream directly from a client side platform.
+</p>
+<p>
+  Feel free to <a href="../contact/index.html">get in touch</a> if you're running into trouble.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="creating-feeds">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#creating-feeds" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Creating Feeds
+</h3>
+
+
+
+<p>
+	By default we setup 4 feeds for you. <strong>user</strong>, <strong>flat</strong>, <strong>aggregated</strong> and <strong>notification</strong>.
+	These 4 feeds cover the use cases of most social sites.
+
+	The user feed is the personal feed for each user. The flat and aggregated feed are meant to store content from people you follow.
+	Lets go through an example. Say that Alessandro pins an item and Thijs follows Alessandro.
+
+	You would add the activity to Alessandro's user feed.
+	You also need to tell Stream that Thijs' flat feed should follow Alessandro.
+	Now when you add an activity to Alessandro's user feed it shows up in Thijs' flat feed
+</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs">alessandro = client.feed(&#39;user&#39;, &#39;1&#39;)
+thijs = client.feed(&#39;flat&#39;, &#39;2&#39;)
+# Thijs&#39; flat feed follows Alessandro
+thijs.follow(&#39;user&#39;, &#39;1&#39;)
+# Alessandro adds an activity
+activity_data = {:actor =&gt; &#39;User:1&#39;, :verb =&gt; &#39;pin&#39;, :object =&gt; &#39;Item:6&#39;}
+alessandro.add_activity(activity_data)
+# Which will show up in Thijs&#39; feed
+thijs.get(:limit=&gt;5)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_creating_feeds-js" data-clipboard-text="alessandro = client.feed(&#39;user&#39;, &#39;1&#39;)
+thijs = client.feed(&#39;flat&#39;, &#39;2&#39;)
+# Thijs&#39; flat feed follows Alessandro
+thijs.follow(&#39;user&#39;, &#39;1&#39;)
+# Alessandro adds an activity
+activity_data = {:actor =&gt; &#39;User:1&#39;, :verb =&gt; &#39;pin&#39;, :object =&gt; &#39;Item:6&#39;}
+alessandro.add_activity(activity_data)
+# Which will show up in Thijs&#39; feed
+thijs.get(:limit=&gt;5)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">alessandro = client.feed(&#39;user&#39;, &#39;1&#39;);
+thijs = client.feed(&#39;flat&#39;, &#39;2&#39;);
+// Thijs&#39; flat feed follows Alessandro
+thijs.follow(&#39;user&#39;, &#39;1&#39;);
+// Alessandro adds an activity
+activity = {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;pin&#39;, &#39;object&#39;: &#39;Item:6&#39;};
+alessandro.addActivity(activity, callback);
+// Which will show up in Thijs&#39; feed
+thijs.get({limit:5}, callback);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_creating_feeds-js" data-clipboard-text="alessandro = client.feed(&#39;user&#39;, &#39;1&#39;);
+thijs = client.feed(&#39;flat&#39;, &#39;2&#39;);
+// Thijs&#39; flat feed follows Alessandro
+thijs.follow(&#39;user&#39;, &#39;1&#39;);
+// Alessandro adds an activity
+activity = {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;pin&#39;, &#39;object&#39;: &#39;Item:6&#39;};
+alessandro.addActivity(activity, callback);
+// Which will show up in Thijs&#39; feed
+thijs.get({limit:5}, callback);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs">alessandro = client.feed(&#39;user&#39;, &#39;1&#39;)
+thijs = client.feed(&#39;flat&#39;, &#39;2&#39;)
+# Thijs&#39; flat feed follows Alessandro
+thijs.follow(&#39;user&#39;, &#39;1&#39;)
+# Alessandro adds an activity
+activity_data = {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;pin&#39;, &#39;object&#39;: &#39;Item:6&#39;}
+alessandro.add_activity(activity_data)
+# Which will show up in Thijs&#39; feed
+thijs.get(limit=5)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_creating_feeds-js" data-clipboard-text="alessandro = client.feed(&#39;user&#39;, &#39;1&#39;)
+thijs = client.feed(&#39;flat&#39;, &#39;2&#39;)
+# Thijs&#39; flat feed follows Alessandro
+thijs.follow(&#39;user&#39;, &#39;1&#39;)
+# Alessandro adds an activity
+activity_data = {&#39;actor&#39;: &#39;User:1&#39;, &#39;verb&#39;: &#39;pin&#39;, &#39;object&#39;: &#39;Item:6&#39;}
+alessandro.add_activity(activity_data)
+# Which will show up in Thijs&#39; feed
+thijs.get(limit=5)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">$alessandro = $client-&gt;feed(&#39;user&#39;, &#39;1&#39;);
+$thijs = $client-&gt;feed(&#39;flat&#39;, &#39;2&#39;);
+// Thijs&#39; flat feed follows Alessandro
+$thijs-&gt;followFeed(&#39;user&#39;, &#39;1&#39;);
+// Alessandro adds an activity
+$data = [
+    &#34;actor_id&#34;=&gt;&#34;User:1&#34;,
+    &#34;verb&#34;=&gt;&#34;pin&#34;,
+    &#34;object_id&#34;=&gt;&#34;Item:6&#34;
+];
+$alessandro-&gt;addActivity($data);
+// Which will show up in Thijs&#39; feed
+$thijs-&gt;getActivities(0, 5);
+</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_creating_feeds-js" data-clipboard-text="$alessandro = $client-&gt;feed(&#39;user&#39;, &#39;1&#39;);
+$thijs = $client-&gt;feed(&#39;flat&#39;, &#39;2&#39;);
+// Thijs&#39; flat feed follows Alessandro
+$thijs-&gt;followFeed(&#39;user&#39;, &#39;1&#39;);
+// Alessandro adds an activity
+$data = [
+    &#34;actor_id&#34;=&gt;&#34;User:1&#34;,
+    &#34;verb&#34;=&gt;&#34;pin&#34;,
+    &#34;object_id&#34;=&gt;&#34;Item:6&#34;
+];
+$alessandro-&gt;addActivity($data);
+// Which will show up in Thijs&#39; feed
+$thijs-&gt;getActivities(0, 5);
+">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">Feed alessandroFeed = streamClient.newFeed(&#34;user&#34;, &#34;1&#34;);
+Feed thijsFeed = streamClient.newFeed(&#34;flat&#34;, &#34;1&#34;);
+
+// Thijs&#39; flat feed follows Alessandro
+thijsFeed.follow(&#34;user&#34;, &#34;1&#34;);
+
+// Alessandro adds an activity
+SimpleActivity activity = new SimpleActivity();
+activity.setActor(&#34;User:1&#34;);
+activity.setObject(&#34;Item:6&#34;);
+activity.setVerb(&#34;pin&#34;);
+SimpleActivity response = flatActivityService.addActivity(activity);
+
+// Which will show up in Thijs&#39; feed
+List&lt;SimpleActivity&gt; activities = thijsFeed.getActivities().getResults();</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="add_activity_creating_feeds-js" data-clipboard-text="Feed alessandroFeed = streamClient.newFeed(&#34;user&#34;, &#34;1&#34;);
+Feed thijsFeed = streamClient.newFeed(&#34;flat&#34;, &#34;1&#34;);
+
+// Thijs&#39; flat feed follows Alessandro
+thijsFeed.follow(&#34;user&#34;, &#34;1&#34;);
+
+// Alessandro adds an activity
+SimpleActivity activity = new SimpleActivity();
+activity.setActor(&#34;User:1&#34;);
+activity.setObject(&#34;Item:6&#34;);
+activity.setVerb(&#34;pin&#34;);
+SimpleActivity response = flatActivityService.addActivity(activity);
+
+// Which will show up in Thijs&#39; feed
+List&lt;SimpleActivity&gt; activities = thijsFeed.getActivities().getResults();">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>
+For many applications these 4 default feeds suffice. You can however add as many feeds as you like
+in the <a href="../dashboard/index.html">dashboard</a>.
+Wanelo for instance has in addition to the aforementioned 4 feeds a separate feed for sites.
+</p>
+<p>
+	There are 3 core types of feeds. Flat feeds, Aggregated feeds and Notification feeds.
+	Aggregated feeds allow you to specify an aggregation rule. This allows your feed to show messages such as:
+	"Thierry, Alessandro and 3 other people like your picture"
+	Notification feeds are a specific implementation of Aggregated Feeds.
+	They allow you to get counts of the number of unseen and unread	notifications.
+	However as they are heavier to work with they are limited to 100 notifications per feed.
+	<ol>
+		<li><a href="#flat-feeds">Flat feed</a></li>
+		<li><a href="#aggregated-feeds">Aggregated feed</a></li>
+		<li><a href="#notification-feeds">Notification feed</a></li>
+	</ol>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="flat-feeds">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#flat-feeds" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Flat Feeds
+</h3>
+
+<p>
+	Flat feeds are the default type of feed in Stream, as the name suggests activities are stored without any grouping.
+	You can create new feeds in the <a href="../dashboard/index.html">dashboard</a>. There are several options you can configure.
+</p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+
+            <th>Description</th>
+            <th>Default</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              Max length
+
+            </td>
+
+            <td data-title="Desc">The number of activities stored in a feed.</td>
+
+              <td data-title="Default">3600</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              Realtime notifications
+
+            </td>
+
+            <td data-title="Desc">Enable realtime notifications</td>
+
+              <td data-title="Default">True</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="aggregated-feeds">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#aggregated-feeds" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Aggregated feeds
+</h3>
+
+<p>
+	Aggregated Feeds allow you to specify an aggregation format.
+	You can create new feeds in the <a href="../dashboard/index.html">dashboard</a>. There are several options you can configure.
+</p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+
+            <th>Description</th>
+            <th>Default</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              Max length
+
+            </td>
+
+            <td data-title="Desc">The number of activities stored in a feed.</td>
+
+              <td data-title="Default">3600</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              Realtime notifications
+
+            </td>
+
+            <td data-title="Desc">Enable realtime notifications</td>
+
+              <td data-title="Default">True</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              Aggregation Format
+
+            </td>
+
+            <td data-title="Desc">The aggregation format to use</td>
+
+              <td data-title="Default">{{ verb.id }}_{{ time.strftime("%Y-%m-%d") }}</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+
+<p>
+	The aggregation rule uses the Jinja2 template syntax. The feed will group all activities which have the same key as determined by the aggregation format.
+The following variables are available:
+    <p>
+        <b>verb.id</b> the unique internal id (generated by GetStream) to the activity verb (eg. 42)
+    </p>
+    <p>
+        <b>verb.infinitive</b> the verb as it is send to the APIs (eg. "like")
+    </p>
+    <p>
+        <b>time</b> the activity creation date and time (or the value sent to APIs)
+    </p>
+    <p>
+        <b>object</b> the activity object as it is sent to the APIs (eg. Item:13)
+    </p>
+    <p>
+        <b>target</b> the activity target (eg. Place:9)
+    </p>
+    <p>
+        <b>actor</b> the activity actor (eg. User:9)
+    </p>
+In addition you can use any of the custom values you've provided when adding the activity.
+The options for strftime are documented <a href="http://strftime.org/" target="_blank">here</a>.
+Furthermore you can also use basic if statements in your aggregation format.
+This allows you to support quite complex aggregation scenarios.
+If you need a more complex aggregation rule please contact support@getstream.io
+</p>
+<p>
+Here are some more examples of how you can aggregate.
+</p>
+<p>
+
+	Per actor, verb id and hour:</br>
+	{{ actor }}_{{ verb.id }}_{{ time.strftime('%H') }}</br>
+
+	Per target and day:</br>
+	{{ target }}_{{ time.strftime('%j') }}</br>
+
+	Complex example using an if statement</br>
+	{% if verb.infinitive == 'like' %}{{ object }}{% else %}{{ id }}{% endif %}</br>
+
+</p>
+
+<p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="notification-feeds">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#notification-feeds" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Notification Feeds
+</h3>
+
+<p>
+	Notification feeds are similar to Aggregated feeds. There are two key differences though which make them more suited to building
+	notification systems.
+	<ol>
+		<li>Notifications can be marked as seen or read</li>
+		<li>You get a realtime count of the number of unseen and unread notifications</li>
+	</ol>
+	You can create new feeds in the <a href="../dashboard/index.html">dashboard</a>. There are several options you can configure.
+</p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+
+            <th>Description</th>
+            <th>Default</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              Max length
+
+            </td>
+
+            <td data-title="Desc">The number of activities stored in a feed.</td>
+
+              <td data-title="Default">100</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              Realtime notifications
+
+            </td>
+
+            <td data-title="Desc">Enable realtime notifications</td>
+
+              <td data-title="Default">True</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              Aggregation Format
+
+            </td>
+
+            <td data-title="Desc">The aggregation format to use</td>
+
+              <td data-title="Default">{{ verb.id }}_{{ time.strftime("%Y-%m-%d") }}</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+<p>
+	The seen and read fields allow you to track different types of user interaction. Take for example the notification system on Facebook.
+	If you click the notification icon, all notifications get marked as seen. However an individual notification only gets marked as read when you click on it.
+
+	You can set the mark read and seen when reading the feed.
+</p>
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+
+            <th>Description</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              mark_read
+
+            </td>
+
+            <td data-title="Desc">Comma separated list of activity ids to mark as read, or boolean true</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              mark_seen
+
+            </td>
+
+            <td data-title="Desc">Comma separated list of activity ids to mark as seen, or boolean true</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+
+<p>Here's the example using the various clients</p>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Mark all activities as seen
+result = notification_feed.get(:limit=&gt;5, :offset=&gt;0, :mark_seen=&gt;true)
+
+# Mark some activities as read
+result = notification_feed.get(:limit=&gt;5, :mark_read=&gt;[&#39;activity_id_1&#39;, &#39;activity_id_2&#39;])</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="mark_seen-js" data-clipboard-text="# Mark all activities as seen
+result = notification_feed.get(:limit=&gt;5, :offset=&gt;0, :mark_seen=&gt;true)
+
+# Mark some activities as read
+result = notification_feed.get(:limit=&gt;5, :mark_read=&gt;[&#39;activity_id_1&#39;, &#39;activity_id_2&#39;])">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Mark all activities as seen
+notificationFeed.get({limit:5, mark_seen:true}, callback);
+// Mark some activities as read
+notificationFeed.get({limit:5, mark_read: [&#39;activityIdOne&#39;, &#39;activityIdTwo&#39;]}, callback);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="mark_seen-js" data-clipboard-text="// Mark all activities as seen
+notificationFeed.get({limit:5, mark_seen:true}, callback);
+// Mark some activities as read
+notificationFeed.get({limit:5, mark_read: [&#39;activityIdOne&#39;, &#39;activityIdTwo&#39;]}, callback);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Mark all activities as seen
+result = notification_feed.get(limit=5, mark_seen=True)
+# Mark some activities as read
+result = notification_feed.get(limit=5, mark_read=[activity_id, activity_id_2])</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="mark_seen-js" data-clipboard-text="# Mark all activities as seen
+result = notification_feed.get(limit=5, mark_seen=True)
+# Mark some activities as read
+result = notification_feed.get(limit=5, mark_read=[activity_id, activity_id_2])">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs"># Mark all activities as seen
+$options = array(&#39;mark_seen&#39; =&gt; true);
+$results = $notification_feed-&gt;getActivities(0, 10, $options);
+
+# Mark some activities as read
+$options = array(&#39;mark_read&#39; =&gt; array(&#39;activity_id_1&#39;, &#39;activity_id_2&#39;));
+$results = $notification_feed-&gt;getActivities(0, 10, $options);
+</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="mark_seen-js" data-clipboard-text="# Mark all activities as seen
+$options = array(&#39;mark_seen&#39; =&gt; true);
+$results = $notification_feed-&gt;getActivities(0, 10, $options);
+
+# Mark some activities as read
+$options = array(&#39;mark_read&#39; =&gt; array(&#39;activity_id_1&#39;, &#39;activity_id_2&#39;));
+$results = $notification_feed-&gt;getActivities(0, 10, $options);
+">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Mark all activities as seen and read
+NotificationActivityServiceImpl&lt;SimpleActivity&gt; notificationActivityService = feed.newNotificationActivityService(SimpleActivity.class);
+notificationActivityService.getActivities(new FeedFilter.Builder().build(), true, true);
+
+// Mark one activity as read by its id
+MarkedActivity marker = new MarkedActivity.Builder().withActivityId(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;).build();
+notificationActivityService.getActivities(new FeedFilter.Builder().build(), marker, new MarkedActivity.Builder().build());</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="mark_seen-js" data-clipboard-text="// Mark all activities as seen and read
+NotificationActivityServiceImpl&lt;SimpleActivity&gt; notificationActivityService = feed.newNotificationActivityService(SimpleActivity.class);
+notificationActivityService.getActivities(new FeedFilter.Builder().build(), true, true);
+
+// Mark one activity as read by its id
+MarkedActivity marker = new MarkedActivity.Builder().withActivityId(&#34;e561de8f-00f1-11e4-b400-0cc47a024be0&#34;).build();
+notificationActivityService.getActivities(new FeedFilter.Builder().build(), marker, new MarkedActivity.Builder().build());">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+<p>Often you'll want to listen to changes in realtime for notification feeds. This is explained in the section on <a href="#realtime">realtime updates</a>.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+
+      <article class="docs-single  hover-enabled" id="targetting">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#targetting" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Targetting &amp; "TO" support
+</h3>
+
+
+<p>
+	The "TO" field gives you finegrained control over which feeds receive a certain activity. This is useful when building functionality
+	such as @mentions or notification feeds. The "TO" field in the activity allows you to specify a list of feeds which should show the activity. An example is shown below:
+</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Add an activity and push it to other feeds using the `to` field
+# especially useful for notification style feeds or @mention functionality
+data = [
+    :actor_id =&gt; &#34;1&#34;,
+    :verb =&gt; &#34;like&#34;,
+    :object_id =&gt; &#34;3&#34;,
+    :to =&gt; [&#34;user:44&#34;, &#34;user:45&#34;]
+];
+user_feed_1.add_activity(data);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="to_support-js" data-clipboard-text="# Add an activity and push it to other feeds using the `to` field
+# especially useful for notification style feeds or @mention functionality
+data = %5b.html
+    :actor_id =&gt; &#34;1&#34;,
+    :verb =&gt; &#34;like&#34;,
+    :object_id =&gt; &#34;3&#34;,
+    :to =&gt; [&#34;user:44&#34;, &#34;user:45&#34;]
+];
+user_feed_1.add_activity(data);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Add an activity and push it to other feeds using the `to` field
+// especially useful for notification style feeds or @mention functionality
+to = [&#39;user:2&#39;, &#39;user:3&#39;]
+activity = {&#39;to&#39;: to, &#39;actor&#39;: 1, &#39;verb&#39;: &#39;tweet&#39;, &#39;object&#39;: 1, &#39;foreign_id&#39;: &#39;tweet:1&#39;};
+user1.addActivity(activity, callback);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="to_support-js" data-clipboard-text="// Add an activity and push it to other feeds using the `to` field
+// especially useful for notification style feeds or @mention functionality
+to = [&#39;user:2&#39;, &#39;user:3&#39;]
+activity = {&#39;to&#39;: to, &#39;actor&#39;: 1, &#39;verb&#39;: &#39;tweet&#39;, &#39;object&#39;: 1, &#39;foreign_id&#39;: &#39;tweet:1&#39;};
+user1.addActivity(activity, callback);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Add an activity and push it to other feeds using the `to` field
+# especially useful for notification style feeds or @mention functionality
+activity = {
+    &#34;actor_id&#34;:&#34;1&#34;,
+    &#34;verb&#34;:&#34;like&#34;,
+    &#34;object_id&#34;:&#34;3&#34;,
+    &#34;to&#34;:[&#34;user:44&#34;, &#34;user:45&#34;]
+};
+user_feed_1.add_activity(activity);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="to_support-js" data-clipboard-text="# Add an activity and push it to other feeds using the `to` field
+# especially useful for notification style feeds or @mention functionality
+activity = {
+    &#34;actor_id&#34;:&#34;1&#34;,
+    &#34;verb&#34;:&#34;like&#34;,
+    &#34;object_id&#34;:&#34;3&#34;,
+    &#34;to&#34;:[&#34;user:44&#34;, &#34;user:45&#34;]
+};
+user_feed_1.add_activity(activity);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// Add an activity and push it to other feeds using the `to` field
+// especially useful for notification style feeds or @mention functionality
+$data = [
+    &#34;actor_id&#34;=&gt;&#34;1&#34;,
+    &#34;verb&#34;=&gt;&#34;like&#34;,
+    &#34;object_id&#34;=&gt;&#34;3&#34;,
+    &#34;to&#34;=&gt;[&#34;user:44&#34;, &#34;user:45&#34;]
+];
+$user_feed_1-&gt;addActivity($data);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="to_support-js" data-clipboard-text="// Add an activity and push it to other feeds using the `to` field
+// especially useful for notification style feeds or @mention functionality
+$data = [
+    &#34;actor_id&#34;=&gt;&#34;1&#34;,
+    &#34;verb&#34;=&gt;&#34;like&#34;,
+    &#34;object_id&#34;=&gt;&#34;3&#34;,
+    &#34;to&#34;=&gt;[&#34;user:44&#34;, &#34;user:45&#34;]
+];
+$user_feed_1-&gt;addActivity($data);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Add an activity and push it to other feeds using the `to` field
+// especially useful for notification style feeds or @mention functionality
+
+SimpleActivity activity = new SimpleActivity();
+activity.setActor(&#34;user:1&#34;);
+activity.setObject(&#34;tweet:1&#34;);
+activity.setVerb(&#34;tweet&#34;);
+activity.setForeignId(&#34;tweet:1&#34;);
+activity.setTo(Arrays.asList(&#34;user:44&#34;, &#34;user:45&#34;));
+SimpleActivity response = flatActivityService.addActivity(activity);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="to_support-js" data-clipboard-text="// Add an activity and push it to other feeds using the `to` field
+// especially useful for notification style feeds or @mention functionality
+
+SimpleActivity activity = new SimpleActivity();
+activity.setActor(&#34;user:1&#34;);
+activity.setObject(&#34;tweet:1&#34;);
+activity.setVerb(&#34;tweet&#34;);
+activity.setForeignId(&#34;tweet:1&#34;);
+activity.setTo(Arrays.asList(&#34;user:44&#34;, &#34;user:45&#34;));
+SimpleActivity response = flatActivityService.addActivity(activity);">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>
+	The TO functionality is quite powerful. It's also useful when building team, organization and topic feeds. You can read more about that in the next section.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="teams">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#teams" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Teams, organizations &amp; topics
+</h3>
+
+
+<p>
+A common use case is to have teams, organizations or topics in your app.
+One of our customers for instance runs a football community. Updates about a player should also be added to the team's feed.
+Stream supports this by adding the activity to the player's feed and specifying the target feeds in the "TO" field. You can think of it as the CC functionality of email.
+</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># The TO field ensures the activity is send to the player, match and team feed
+activity_data = {:actor =&gt; &#39;Player:Suarez&#39;, :verb =&gt; &#39;foul&#39;, :object =&gt; &#39;Player:Ramos&#39;,
+    :match =&gt; {:name =&gt; &#39;El Clásico&#39;, :id =&gt; 10},
+    :to =&gt; [&#39;team:barcelona&#39;, &#39;match:1&#39;],
+}
+player_feed_1.add_activity(activity_data)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="team_to-js" data-clipboard-text="# The TO field ensures the activity is send to the player, match and team feed
+activity_data = {:actor =&gt; &#39;Player:Suarez&#39;, :verb =&gt; &#39;foul&#39;, :object =&gt; &#39;Player:Ramos&#39;,
+    :match =&gt; {:name =&gt; &#39;El Clásico&#39;, :id =&gt; 10},
+    :to =&gt; [&#39;team:barcelona&#39;, &#39;match:1&#39;],
+}
+player_feed_1.add_activity(activity_data)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// The TO field ensures the activity is send to the player, match and team feed
+activity = {&#39;actor&#39;: &#39;Player:Suarez&#39;, &#39;verb&#39;: &#39;foul&#39;, &#39;object&#39;: &#39;Player:Ramos&#39;
+    &#39;match&#39;: {&#39;name&#39;: &#39;El Clásico&#39;, &#39;id&#39;: 10},
+    &#39;to&#39;: [&#39;team:barcelona&#39;, &#39;match:1&#39;]
+};
+playerFeed1.addActivity(activity, callback);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="team_to-js" data-clipboard-text="// The TO field ensures the activity is send to the player, match and team feed
+activity = {&#39;actor&#39;: &#39;Player:Suarez&#39;, &#39;verb&#39;: &#39;foul&#39;, &#39;object&#39;: &#39;Player:Ramos&#39;
+    &#39;match&#39;: {&#39;name&#39;: &#39;El Clásico&#39;, &#39;id&#39;: 10},
+    &#39;to&#39;: [&#39;team:barcelona&#39;, &#39;match:1&#39;]
+};
+playerFeed1.addActivity(activity, callback);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># The TO field ensures the activity is send to the player, match and team feed
+activity_data = {&#39;actor&#39;: &#39;Player:Suarez&#39;, &#39;verb&#39;: &#39;foul&#39;, &#39;object&#39;: &#39;Player:Ramos&#39;
+    &#39;match&#39;: {&#39;name&#39;: &#39;El Clásico&#39;, &#39;id&#39;: 10},
+    &#39;to&#39;: [&#39;team:barcelona&#39;, &#39;match:1&#39;]
+};
+player_feed_1.add_activity(activity_data)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="team_to-js" data-clipboard-text="# The TO field ensures the activity is send to the player, match and team feed
+activity_data = {&#39;actor&#39;: &#39;Player:Suarez&#39;, &#39;verb&#39;: &#39;foul&#39;, &#39;object&#39;: &#39;Player:Ramos&#39;
+    &#39;match&#39;: {&#39;name&#39;: &#39;El Clásico&#39;, &#39;id&#39;: 10},
+    &#39;to&#39;: [&#39;team:barcelona&#39;, &#39;match:1&#39;]
+};
+player_feed_1.add_activity(activity_data)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// The TO field ensures the activity is send to the player, match and team feed
+$data = [&#39;actor&#39; =&gt; &#39;Player:Suarez&#39;, &#39;verb&#39; =&gt; &#39;foul&#39;, &#39;object&#39; =&gt; &#39;Player:Ramos&#39;,
+    &#39;match&#39; =&gt; [&#39;name&#39;=&gt; &#39;El Clásico&#39;, &#39;id&#39;=&gt; 10],
+    &#39;to&#39; =&gt; [&#39;team:barcelona&#39;, &#39;match:1&#39;]
+];
+$player_feed_1-&gt;addActivity($data);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="team_to-js" data-clipboard-text="// The TO field ensures the activity is send to the player, match and team feed
+$data = [&#39;actor&#39; =&gt; &#39;Player:Suarez&#39;, &#39;verb&#39; =&gt; &#39;foul&#39;, &#39;object&#39; =&gt; &#39;Player:Ramos&#39;,
+    &#39;match&#39; =&gt; [&#39;name&#39;=&gt; &#39;El Clásico&#39;, &#39;id&#39;=&gt; 10],
+    &#39;to&#39; =&gt; [&#39;team:barcelona&#39;, &#39;match:1&#39;]
+];
+$player_feed_1-&gt;addActivity($data);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs"># The TO field ensures the activity is send to the player, match and team feed
+// Create a new activity
+SimpleActivity activity = new SimpleActivity();
+activity.setActor(&#34;Player:Suarez&#34;);
+activity.setObject(&#34;Player:Ramos&#34;);
+activity.setVerb(&#34;foul&#34;);
+SimpleActivity response = flatActivityService.addActivity(activity);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="team_to-js" data-clipboard-text="# The TO field ensures the activity is send to the player, match and team feed
+// Create a new activity
+SimpleActivity activity = new SimpleActivity();
+activity.setActor(&#34;Player:Suarez&#34;);
+activity.setObject(&#34;Player:Ramos&#34;);
+activity.setVerb(&#34;foul&#34;);
+SimpleActivity response = flatActivityService.addActivity(activity);">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>
+By default only the user, flat, aggregated and notification feed are setup for you.
+You'll need to go to the <a href="../dashboard/index.html">dashboard</a> and create feeds called team, player and match for the above example to work.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="uniqueness">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#uniqueness" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Uniqueness &amp; Foreign id
+</h3>
+
+
+<p>Stream handles uniqueness in 3 different ways depending on the values of the <b>foreign_id</b> and <b>time</b> fields.</p>
+
+<p><b>If time is not provided</b>: Stream always creates a new activity.</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-python active">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-python active">
+          <pre><code class="python code-hljs"># the data is the same but two different activities are created
+activity_data = {&#39;actor&#39;: 1, &#39;verb&#39;: &#39;pin&#39;, &#39;object&#39;: 1, &#39;target&#39;: &#39;1&#39;}
+first_activity_id = user_feed_1.add_activity(activity_data)[&#39;id&#39;]
+second_activity_id = user_feed_1.add_activity(activity_data)[&#39;id&#39;]
+# first_activity_id and second_activity_id are different</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="non_unique-js" data-clipboard-text="# the data is the same but two different activities are created
+activity_data = {&#39;actor&#39;: 1, &#39;verb&#39;: &#39;pin&#39;, &#39;object&#39;: 1, &#39;target&#39;: &#39;1&#39;}
+first_activity_id = user_feed_1.add_activity(activity_data)[&#39;id&#39;]
+second_activity_id = user_feed_1.add_activity(activity_data)[&#39;id&#39;]
+# first_activity_id and second_activity_id are different">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p><b>If only the time field is provided</b>: Uniqueness will be enforced on activity data and time.</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-python active">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-python active">
+          <pre><code class="python code-hljs">from datetime import datetime
+now = datetime.utcnow()
+
+activity = {
+    &#34;actor_id&#34;:&#34;1&#34;,
+    &#34;verb&#34;:&#34;like&#34;,
+    &#34;object_id&#34;:&#34;3&#34;,
+    &#34;time&#34;: now
+];
+
+# the time and the activity data are the same
+first_activity_id = user_feed_1.add_activity(activity)[&#39;id&#39;]
+second_activity_id = user_feed_1.add_activity(activity)[&#39;id&#39;]
+# hence the first activity id and second are equal</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="time_unique-js" data-clipboard-text="from datetime import datetime
+now = datetime.utcnow()
+
+activity = {
+    &#34;actor_id&#34;:&#34;1&#34;,
+    &#34;verb&#34;:&#34;like&#34;,
+    &#34;object_id&#34;:&#34;3&#34;,
+    &#34;time&#34;: now
+];
+
+# the time and the activity data are the same
+first_activity_id = user_feed_1.add_activity(activity)[&#39;id&#39;]
+second_activity_id = user_feed_1.add_activity(activity)[&#39;id&#39;]
+# hence the first activity id and second are equal">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p><b>If both time and foreign_id fields are provided</b>: Uniqueness will be enforced on the combination of time &amp; foreign_id.</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-python active">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-python active">
+          <pre><code class="python code-hljs">from datetime import datetime
+now = datetime.utcnow()
+
+first_activity = {
+    &#34;actor_id&#34;:&#34;1&#34;,
+    &#34;verb&#34;:&#34;like&#34;,
+    &#34;object_id&#34;:&#34;3&#34;,
+    &#34;time&#34;: now,
+    &#34;foreign_id&#34;: &#34;like:3&#34;
+];
+first_activity_id = user_feed_1.add_activity(first_activity)[&#39;id&#39;]
+
+second_activity = {
+    &#34;actor_id&#34;:&#34;1&#34;,
+    &#34;verb&#34;:&#34;like&#34;,
+    &#34;object_id&#34;:&#34;3&#34;,
+    &#34;time&#34;: now,
+    &#34;extra&#34;: &#34;extra_value&#34;,
+    &#34;foreign_id&#34;: &#34;like:3&#34;
+]
+second_activity_id = user_feed_1.add_activity(activity)[&#39;id&#39;]
+# foreign_id and time are the same for both activities
+# hence only one activity is created and first and second id are equal
+</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="time_fid_unique-js" data-clipboard-text="from datetime import datetime
+now = datetime.utcnow()
+
+first_activity = {
+    &#34;actor_id&#34;:&#34;1&#34;,
+    &#34;verb&#34;:&#34;like&#34;,
+    &#34;object_id&#34;:&#34;3&#34;,
+    &#34;time&#34;: now,
+    &#34;foreign_id&#34;: &#34;like:3&#34;
+];
+first_activity_id = user_feed_1.add_activity(first_activity)[&#39;id&#39;]
+
+second_activity = {
+    &#34;actor_id&#34;:&#34;1&#34;,
+    &#34;verb&#34;:&#34;like&#34;,
+    &#34;object_id&#34;:&#34;3&#34;,
+    &#34;time&#34;: now,
+    &#34;extra&#34;: &#34;extra_value&#34;,
+    &#34;foreign_id&#34;: &#34;like:3&#34;
+]
+second_activity_id = user_feed_1.add_activity(activity)[&#39;id&#39;]
+# foreign_id and time are the same for both activities
+# hence only one activity is created and first and second id are equal
+">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="what-to-store">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#what-to-store" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+What to store
+</h3>
+
+<p>
+Stream allows you to store custom data that is not part of the standard activity schema. It is important to remember that all the data sent to Stream is denormalised.
+</p>
+Let us take these two activities for example:
+<p>
+<pre><code class="code-hljs javascript">{
+    "actor": 13,
+    "verb": 'like',
+    "object": 17,
+    "user_data": {
+    	"name": "thierry",
+    	"profile_pic": "http://url/to/thierry/pic"
+    }
+}
+</code></pre>
+
+</p>
+<p>
+<pre><code class="code-hljs javascript">{
+    "actor": 11,
+    "verb": 'pinned',
+    "object": 16,
+    "user_data": {
+    	"name": "thierry",
+    	"profile_pic": "http://url/to/thierry/pic"
+    }
+}
+</code></pre>
+</p>
+<p>The user_data field holds some informations about Thierry's user.
+This is convenient when reading data from the feeds. It can however also become a problem.
+For example, if Thierry now changes his profile picture the data stored in the feed will be out of date.
+Since this data is denormalized there is no way to update it.
+<br>
+In general you should never store extra data on Stream if it gets updated often.
+Instead you should store a reference to it. The example data from before would be sent to Stream like this:</p>
+<p>
+<pre><code class="code-hljs javascript">{
+    "actor": 13,
+    "verb": "like",
+    "object": 17,
+    "user_id": 42
+}
+</code></pre>
+</p>
+<div class="alert alert-info">Note: We suggest you to always use the <a href="index.html#uniqueness">foreign_id</a> field if you need to keep a mapping between data in your database and activities in Stream.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="frameworks">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#frameworks" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Framework integrations &amp; example apps
+</h3>
+
+<p>
+To make it even easier to get started with GetStream.io we also offer framework integrations and example apps.
+If you're favourite framework is missing, be sure to <a href="../contact/index.html">get in touch</a>.
+</p>
+<p>
+	The examples come in three flavours. The Rails, Django and Laravel examples show you how to build a <a href="http://exampledjango.getstream.io/">Pinterest style application</a>.
+	The Parse example is a Facebook/Twitter style community where you can <a href="http://getstream.parseapp.com/">share your view</a>.
+	If you find these example interesting you might also want to have a look at our <a href="https://gist.github.com/tbarbugli/97bf26f400ecf1443ef6">Twitter tutorial</a>, which explains
+	you how to build a scalable twitter clone using Django and GetStream.io.
+
+</p>
+
+<div class="row breath-md">
+<div class="col-md-4 text-center">
+	<img class="framework tip" src="../images/logo-rails.png" alt="Rails" width="100" title="Rails">
+	<p>
+		<a href="https://github.com/getstream/stream-rails">stream-rails</a></br>
+		example (<a href="https://github.com/GetStream/Stream-Example-Ruby">code</a>)
+	</p>
+</div>
+<div class="col-md-4 text-center">
+	<img class="framework tip" src="../images/logo-django.png" alt="Django" width="100" title="Django">
+	<p>
+		<a href="https://github.com/getstream/stream-django">stream-django</a></br>
+		<a href="http://exampledjango.getstream.io/">example</a> (<a href="https://github.com/GetStream/Stream-Example-Py">code</a>)
+	</p>
+</div>
+<div class="col-md-4 text-center">
+	<img class="framework tip" src="../images/logo-laravel.png" alt="Laravel" width="100" title="Laravel">
+	<p>
+		<a href="https://github.com/getstream/stream-laravel">stream-laravel</a></br>
+		example (<a href="https://github.com/GetStream/Stream-Example-PHP">code</a>)
+	</p>
+</div>
+</div>
+
+<div class="row breath-md">
+	<div class="col-md-4 text-center">
+		<img class="framework tip" src="../images/logo-parse.png" alt="Laravel" width="100" title="Laravel">
+		<p>
+			<a href="http://getstream.parseapp.com/">example</a> (<a href="https://github.com/GetStream/Stream-Example-Parse">code</a>)
+		</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="performance">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#performance" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Performance, Latency &amp; Regions
+</h3>
+
+
+<p>
+You can view the current API status on the <a href="http://status.getstream.io/">status page</a>.
+In general you should expect your feed to load in about 60ms. The most common cause of slower performance is latency.
+You can improve this by selecting a data center close to you. We currently support these 4 locations:
+
+<ul>
+	<li>US East Virginia: us-east</li>
+	<li>US West N. California: us-west</li>
+	<li>Ireland: eu-west</li>
+    <li>Japan: ap-northeast</li>
+</ul>
+
+To change your location get in touch with <a href="../contact/index.html">support</a>. If your location is not in this list or if you experience
+high latency please get in touch with us.
+</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs">client = Stream::Client.new(&#39;YOUR_API_KEY&#39;,&#39;API_KEY_SECRET&#39;, &#39;SITE_ID&#39;, :location =&gt; &#39;us-east&#39;)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="regions-js" data-clipboard-text="client = Stream::Client.new(&#39;YOUR_API_KEY&#39;,&#39;API_KEY_SECRET&#39;, &#39;SITE_ID&#39;, :location =&gt; &#39;us-east&#39;)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// connect to the us-east region
+client = stream.connect(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;, &#39;SITE_ID&#39;, {&#39;location&#39;: &#39;us-east&#39;});</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="regions-js" data-clipboard-text="// connect to the us-east region
+client = stream.connect(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;, &#39;SITE_ID&#39;, {&#39;location&#39;: &#39;us-east&#39;});">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># connect to the us-east region
+import stream
+client = stream.connect(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;, location=&#39;us-east&#39;)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="regions-js" data-clipboard-text="# connect to the us-east region
+import stream
+client = stream.connect(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;, location=&#39;us-east&#39;)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">$client = new GetStream\Stream\Client(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;);
+$client-&gt;setLocation(&#39;us-east&#39;);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="regions-js" data-clipboard-text="$client = new GetStream\Stream\Client(&#39;YOUR_API_KEY&#39;, &#39;API_KEY_SECRET&#39;);
+$client-&gt;setLocation(&#39;us-east&#39;);">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">ClientConfiguration streamConfig = new ClientConfiguration().setRegion(StreamRegion.US_EAST);
+StreamClient streamClient = new StreamClientImpl(streamConfig, &#34;API_KEY&#34;, &#34;API_SECRET&#34;);</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="regions-js" data-clipboard-text="ClientConfiguration streamConfig = new ClientConfiguration().setRegion(StreamRegion.US_EAST);
+StreamClient streamClient = new StreamClientImpl(streamConfig, &#34;API_KEY&#34;, &#34;API_SECRET&#34;);">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>
+Another common cause of slow newsfeed performance is the enrichment step. Often you'll send references to your database in the activities.
+When loading your newsfeed you need to run certain database queries to load the latest version of this data.
+In cases like this there are 2 things to keep in mind:
+
+<ol>
+	<li>Batch all the database queries. Never run N queries for N items in the feed</li>
+	<li>Cache the lookup by primary key using a model layer cache (recommended only for large apps)</li>
+</ol>
+</p>
+
+<p>
+	We're constantly working to make the API even faster. If you encounter any performance issues be sure to get in touch.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+
+      <article id="advanced"><a href="#advanced"></a></article>
+      <article class="docs-single  hover-enabled" id="batch-follow">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#batch-follow" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Batch follow
+</h3>
+
+
+
+
+<p>Multiple follow relationships can be created with a single batch insert operation. This is very convenient when importing data to GetStream.</p>
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># Batch following many feeds
+follows = [
+    {:source =&gt; &#39;flat:1&#39;, :target =&gt; &#39;user:1&#39;},
+    {:source =&gt; &#39;flat:1&#39;, :target =&gt; &#39;user:2&#39;},
+    {:source =&gt; &#39;flat:1&#39;, :target =&gt; &#39;user:3&#39;}
+]
+client.follow_many(follows)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_follow-js" data-clipboard-text="# Batch following many feeds
+follows = [
+    {:source =&gt; &#39;flat:1&#39;, :target =&gt; &#39;user:1&#39;},
+    {:source =&gt; &#39;flat:1&#39;, :target =&gt; &#39;user:2&#39;},
+    {:source =&gt; &#39;flat:1&#39;, :target =&gt; &#39;user:3&#39;}
+]
+client.follow_many(follows)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Js client does not support this yet
+// Please contact support if you need this feature</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_follow-js" data-clipboard-text="// Js client does not support this yet
+// Please contact support if you need this feature">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># Batch following many feeds
+follows = [
+    {&#39;source&#39;: &#39;flat:1&#39;, &#39;target&#39;: &#39;user:1&#39;},
+    {&#39;source&#39;: &#39;flat:1&#39;, &#39;target&#39;: &#39;user:2&#39;},
+    {&#39;source&#39;: &#39;flat:1&#39;, &#39;target&#39;: &#39;user:3&#39;}
+]
+client.follow_many(follows)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_follow-js" data-clipboard-text="# Batch following many feeds
+follows = [
+    {&#39;source&#39;: &#39;flat:1&#39;, &#39;target&#39;: &#39;user:1&#39;},
+    {&#39;source&#39;: &#39;flat:1&#39;, &#39;target&#39;: &#39;user:2&#39;},
+    {&#39;source&#39;: &#39;flat:1&#39;, &#39;target&#39;: &#39;user:3&#39;}
+]
+client.follow_many(follows)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// Php client does not support this yet
+// Please contact support if you need this feature</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_follow-js" data-clipboard-text="// Php client does not support this yet
+// Please contact support if you need this feature">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Java client does not support this yet
+// Please contact support if you need this feature</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_follow-js" data-clipboard-text="// Java client does not support this yet
+// Please contact support if you need this feature">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+            <th>Type</th>
+            <th>Description</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;list&#125;</td>
+
+            <td data-title="Desc">The list of a follow objects eg. [{'source': 'flat:1', 'target': 'user:2'}, ]</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+<p>The API does not return any data.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="batch-activity-add">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#batch-activity-add" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>Batch activity add</h3>
+
+<p>Allows you to add an activity to multiple feeds in one single request.</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-java">
+	        <a href="#java" role="tab" data-toggle="tab" data-target=".tab-java" data-lang="java">
+	          Java
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-php">
+	        <a href="#php" role="tab" data-toggle="tab" data-target=".tab-php" data-lang="php">
+	          PHP
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-python">
+	        <a href="#python" role="tab" data-toggle="tab" data-target=".tab-python" data-lang="python">
+	          Python
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-js">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	      <li class="codetabs-li li-ruby active">
+	        <a href="#ruby" role="tab" data-toggle="tab" data-target=".tab-ruby" data-lang="ruby">
+	          Ruby
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-ruby active">
+          <pre><code class="ruby code-hljs"># adds 1 activity to many feeds in one request
+feeds = [&#39;flat:1&#39;, &#39;flat:2&#39;, &#39;flat:3&#39;, &#39;flat:4&#39;]
+activity = {:actor =&gt; &#34;User:2&#34;, :verb =&gt; &#34;pin&#34;, :object =&gt; &#34;Place:42&#34;, :target =&gt; &#34;Board:1&#34;}
+client.add_to_many(activity, feeds)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_activity_add-js" data-clipboard-text="# adds 1 activity to many feeds in one request
+feeds = [&#39;flat:1&#39;, &#39;flat:2&#39;, &#39;flat:3&#39;, &#39;flat:4&#39;]
+activity = {:actor =&gt; &#34;User:2&#34;, :verb =&gt; &#34;pin&#34;, :object =&gt; &#34;Place:42&#34;, :target =&gt; &#34;Board:1&#34;}
+client.add_to_many(activity, feeds)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-js">
+          <pre><code class="js code-hljs">// Js client does not support this yet
+// Please contact support if you need this feature</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_activity_add-js" data-clipboard-text="// Js client does not support this yet
+// Please contact support if you need this feature">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-python">
+          <pre><code class="python code-hljs"># adds 1 activity to many feeds in one request
+feeds = [&#39;flat:1&#39;, &#39;flat:2&#39;, &#39;flat:3&#39;, &#39;flat:4&#39;]
+activity = {&#34;actor&#34;: &#34;User:2&#34;, &#34;verb&#34;: &#34;pin&#34;, &#34;object&#34;: &#34;Place:42&#34;, &#34;target&#34;: &#34;Board:1&#34;}
+client.add_to_many(activity, feeds)</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_activity_add-js" data-clipboard-text="# adds 1 activity to many feeds in one request
+feeds = [&#39;flat:1&#39;, &#39;flat:2&#39;, &#39;flat:3&#39;, &#39;flat:4&#39;]
+activity = {&#34;actor&#34;: &#34;User:2&#34;, &#34;verb&#34;: &#34;pin&#34;, &#34;object&#34;: &#34;Place:42&#34;, &#34;target&#34;: &#34;Board:1&#34;}
+client.add_to_many(activity, feeds)">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-php">
+          <pre><code class="php code-hljs">// Php client does not support this yet
+// Please contact support if you need this feature</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_activity_add-js" data-clipboard-text="// Php client does not support this yet
+// Please contact support if you need this feature">Copy</button>
+        </div>
+
+
+        <div class="tab-pane tab-java">
+          <pre><code class="java code-hljs">// Java client does not support this yet
+// Please contact support if you need this feature</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="batch_activity_add-js" data-clipboard-text="// Java client does not support this yet
+// Please contact support if you need this feature">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+
+<aside class="docs-params">
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped table-hover table-block-on-mobile">
+        <thead>
+          <tr>
+            <th class="text-right-sm">Name</th>
+            <th>Type</th>
+            <th>Description</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              feeds
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;list&#125;</td>
+
+            <td data-title="Desc">The list of a feeds eg. ['user:1', 'flat:2']</td>
+
+
+          </tr>
+
+
+          <tr">
+            <td data-title="Name" class="text-right-sm">
+              activity
+
+            </td>
+
+           	  <td data-title="Type" class="text-muted">&#123;object&#125;</td>
+
+            <td data-title="Desc">The activity object (see feed endpoint for reference)</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+
+      <article class="docs-single  hover-enabled" id="import">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#import" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Importing data
+</h3>
+
+<p>
+	First of all, support will gladly help you import your data. So feel free to <a href="../contact/index.html">get in touch</a>.
+	There are two common scenarios when importing data:
+</p>
+
+<ol>
+	<li>You want to import only follow relationships. Your feed will show new activities only.</li>
+	<li>You want to import both follows and activities. Your feed will also show older data.</li>
+</ol>
+
+<p>
+	There are a few best practices to keep in mind:
+</p>
+<ol>
+	<li>When importing both activities and follows, start with the activities. Your import will run substantially faster.</li>
+	<li>Use batch operations where possible. add_activities is a lot quicker than repeated calls via add_activity.</li>
+	<li>For large imports always contact support.</li>
+</ol>
+<br />
+<h4>Data dumps</h4>
+<p>
+	For large imports the best approach is to send us a dump of your data. Our preferred format is JSON, an example of a dump
+	is shown below:
+</p>
+
+
+
+	  <ul class="codetabs nav nav-tabs" role="tablist">
+
+
+	      <li class="codetabs-li li-js active">
+	        <a href="#js" role="tab" data-toggle="tab" data-target=".tab-js" data-lang="js">
+	          JS/Node
+	        </a>
+	      </li>
+
+	  </ul>
+	  <div class="code-tab-content tab-content">
+
+
+
+        <div class="tab-pane tab-js active">
+          <pre><code class="js code-hljs">// start by adding multiple activities, grouped by feedId
+{&#34;instruction&#34;: &#34;add_activities&#34;, &#34;feedId&#34;: &#34;user:1&#34;, &#34;data&#34;: [{&#34;actor&#34;: 1, &#34;verb&#34;: &#34;tweet&#34;, &#34;object&#34;: 1, &#34;foreign_id&#34;: &#34;tweet:1&#34;},{&#34;actor&#34;: 2, &#34;verb&#34;: &#34;tweet&#34;, &#34;object&#34;: 2, &#34;foreign_id&#34;: &#34;tweet:2&#34;}]}
+// follow instructions, grouped by feedId, flat:1 follows user:2 and user:3
+{&#34;instruction&#34;: &#34;follow&#34;, &#34;feedId&#34;: &#34;flat:1&#34;, &#34;data&#34;: [&#34;user:2&#34;, &#34;user:3&#34;]}
+// instructions are separated by newlines, flat:2 follows user:3 and user:4
+{&#34;instruction&#34;: &#34;follow&#34;, &#34;feedId&#34;: &#34;flat:2&#34;, &#34;data&#34;: [&#34;user:3&#34;, &#34;user:4&#34;]}</code></pre>
+          <button class="btn btn-xs btn-invisible btn-clipboard hidden-xs" data-code-id="data_dump-js" data-clipboard-text="// start by adding multiple activities, grouped by feedId
+{&#34;instruction&#34;: &#34;add_activities&#34;, &#34;feedId&#34;: &#34;user:1&#34;, &#34;data&#34;: [{&#34;actor&#34;: 1, &#34;verb&#34;: &#34;tweet&#34;, &#34;object&#34;: 1, &#34;foreign_id&#34;: &#34;tweet:1&#34;},{&#34;actor&#34;: 2, &#34;verb&#34;: &#34;tweet&#34;, &#34;object&#34;: 2, &#34;foreign_id&#34;: &#34;tweet:2&#34;}]}
+// follow instructions, grouped by feedId, flat:1 follows user:2 and user:3
+{&#34;instruction&#34;: &#34;follow&#34;, &#34;feedId&#34;: &#34;flat:1&#34;, &#34;data&#34;: [&#34;user:2&#34;, &#34;user:3&#34;]}
+// instructions are separated by newlines, flat:2 follows user:3 and user:4
+{&#34;instruction&#34;: &#34;follow&#34;, &#34;feedId&#34;: &#34;flat:2&#34;, &#34;data&#34;: [&#34;user:3&#34;, &#34;user:4&#34;]}">Copy</button>
+        </div>
+
+
+	  </div>
+
+
+<p>
+	Next you should gzip the dump and send it to support.
+	The dump allows us to skip the HTTP layer when importing and will often be 10 times faster than the equivalent imports via the APIs.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="realtime-webhooks">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#realtime-webhooks" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+Webhook realtime updates
+</h3>
+
+
+
+<p>
+    Stream can optionally send all the updates on your feeds to a webhook you manage. This allows for instance to process feed updates server side and trigger actions like email notifications or update your internal metrics.
+</p>
+
+<div class="alert alert-info">Note: This feature is not yet available to all our users. If you need this feature, please get in touch with support to activate this.</div>
+
+<p>
+    The realtime updates are sent with POST requests, you will receive data in json format, updates are sent in batches (up to 100 activities per push)
+</p>
+
+<pre><code class="code-hljs javascript">
+[
+    [{
+        "deleted":[],
+        "new":[{"actor":"1","verb":"tweet","object":"1","target":null,"time":"2014-12-15T17:20:37.258","foreign_id":null,"id":"af781804-847e-11e4-8080-80012fb97b9e","tweet":"Hello world"}],
+        "published_at":"2014-12-15T17:20:37.263518+00:00",
+        "feed":"user:2"}
+    ],
+    [{
+        "deleted":["38f81366-847f-11e4-9c94-0cc47a024be0"],
+        "new":[],
+        "published_at":"2014-12-15T17:20:37.263518+00:00",
+        "feed":"flat:1"}
+    ]
+]
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+      <article class="docs-single  hover-enabled" id="realtime-sqs">
+    <a class="btn-sm btn-link docs-title-hashlink hover-action" href="#realtime-sqs" ariahidden="true"><i class="icon icon-link"></i></a>
+
+
+
+
+
+<h3>
+SQS realtime updates
+</h3>
+
+
+
+<p>
+    Stream can optionally send all the updates on your feeds to a Amazon SQS queue you own. This allows you to take advantage of SQS scale and consume the update messages at a
+    desired rate.
+</p>
+
+<div class="alert alert-info">Note: this feature is not yet available to all our users. If you need this feature, please get in touch with support to activate this.</div>
+
+<div class="alert alert-info">Note: like the webhook updates, all updates for a feed type are stored in the same queue. (eg. all updates on flat feeds).</div>
+
+<p>
+    The realtime updates are published on a SQS you own, you will receive data in json format, updates are sent in batches (up to 100 activities per push)
+</p>
+
+<pre><code class="code-hljs javascript">
+[
+    [{
+        "deleted":[],
+        "new":[{"actor":"1","verb":"tweet","object":"1","target":null,"time":"2014-12-15T17:20:37.258","foreign_id":null,"id":"af781804-847e-11e4-8080-80012fb97b9e","tweet":"Hello world"}],
+        "published_at":"2014-12-15T17:20:37.263518+00:00",
+        "feed":"user:2"}
+    ],
+    [{
+        "deleted":["38f81366-847f-11e4-9c94-0cc47a024be0"],
+        "new":[],
+        "published_at":"2014-12-15T17:20:37.263518+00:00",
+        "feed":"flat:1"}
+    ]
+]
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+
+    </article>
+  </div>
+</section>
+</div>
+<aside><div class="modal fade" id="modal-auth" tabindex="-1" role="dialog" aria-labelledby="auth" aria-hidden="true">
+
+  <div class="modal-dialog text-uppercase modal-sm">
+    <div class="modal-content zoom-in">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="icon icon-close visible-xs" aria-hidden="true"></i><span class="sr-only">Close</span></button>
+          <h4 class="modal-title"><span class="modal-view-login">Sign in</span>
+<span class="modal-view-register">Create a <b>free</b> account</span>
+<span class="modal-view-reset">Password Reset</span></h4>
+        </div><div class="modal-body">
+        <div class="modal-view-login modal-view-register">
+    <a class="btn btn-lg btn-block btn-github" href="../accounts/github/login/index1565.html?process=login">
+      <i class="icon icon-github"></i> Sign in with GitHub
+    </a>
+    <div class="breath-md text-lined"><div><span class="text-muted">or</span></div></div>
+  </div>
+<section class="modal-view-login flip-in-y">
+      <div class="form-horizontal">
+        <form role="form" id="form-login" class="form-to-validate" method="post" action="http://getstream.io/accounts/login/">
+          <div class="row form-group has-feedback">
+    <label class="col-sm-3 control-label" for="id_login">Username</label>
+    <div class="col-sm-9">
+      <input autofocus="" class="form-control" id="id_login" name="login" placeholder="Username or e-mail" required="" type="text" /></div>
+    </div>
+          <div class="row form-group has-feedback">
+    <label class="col-sm-3 control-label" for="id_password">Password</label>
+    <div class="col-sm-9">
+      <input class="form-control" id="id_password" name="password" placeholder="Password" required="" type="password" /></div>
+    </div>
+          <input type='hidden' name='csrfmiddlewaretoken' value='E4jlzTWkDtfStF18OJR4xjpr2jTnYv56' />
+          <button class="btn btn-lg btn-block btn-warning" type="submit">Sign in</button>
+        </form>
+      </div>
+    </section>
+<section class="modal-view-register flip-in-y">
+      <div class="form-horizontal">
+        <form role="form" id="form-register" class="form-to-validate" method="post" action="http://getstream.io/accounts/signup/">
+          <div class="row form-group has-feedback">
+    <label class="col-sm-3 control-label" for="id_username">Username</label>
+    <div class="col-sm-9">
+      <input autofocus="" class="form-control" id="id_username" maxlength="30" name="username" placeholder="Username" required="" type="text" /></div>
+    </div>
+          <div class="row form-group has-feedback">
+    <label class="col-sm-3 control-label" for="id_email">Email</label>
+    <div class="col-sm-9">
+      <input class="form-control" id="id_email" name="email" placeholder="E-mail address" required="" type="email" /></div>
+    </div>
+          <div class="row form-group has-feedback">
+    <label class="col-sm-3 control-label" for="id_password1">Password</label>
+    <div class="col-sm-9">
+      <input class="form-control" id="id_password1" name="password1" placeholder="Password" required="" type="password" /></div>
+    </div>
+          <input type='hidden' name='csrfmiddlewaretoken' value='E4jlzTWkDtfStF18OJR4xjpr2jTnYv56' />
+          <button class="btn btn-lg btn-block btn-free" type="submit">Create account</button>
+        </form>
+      </div>
+    </section>
+<section class="modal-view-reset flip-in-y">
+      <p class="text-center">We'll send you an e-mail.</p>
+      <p class="text-center text-muted"><small>Please contact us if you have any trouble resetting your password.</small></p>
+      <div class="form-horizontal">
+        <form role="form" id="form-reset" class="form-to-validate" method="post" action="http://getstream.io/accounts/password/reset/">
+          <div class="row form-group has-feedback">
+    <label class="col-sm-3 control-label" for="id_email">Email</label>
+    <div class="col-sm-9">
+      <input autofocus="" class="form-control" id="id_email" name="email" required="" size="30" type="email" /></div>
+    </div>
+          <input type='hidden' name='csrfmiddlewaretoken' value='E4jlzTWkDtfStF18OJR4xjpr2jTnYv56' /><button class="btn btn-lg btn-block btn-danger" type="submit">Reset My Password</button>
+        </form>
+      </div>
+    </section></div><div class="modal-footer text-ellipsis">
+        <a class="text-ellipsis pull-left modal-view-login modal-view-reset" href="../accounts/signup/index.html" role="tab" data-view-switch="register">Create account</a>
+  <a class="text-ellipsis modal-view-login" href="../accounts/password/reset/index.html" data-view-switch="reset">Forgot your password?</a>
+  <a class="text-ellipsis modal-view-register" href="../accounts/login/index.html" role="tab" data-view-switch="login">Already have an account? Sign in</a>
+  <a class="text-ellipsis modal-view-reset" href="../accounts/login/index.html" role="tab" data-view-switch="login">Back</a></div></div>
+  </div>
+</div>
+</aside><aside id="notifications" class="notifications bottom-right"></aside><script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','../analytics.js','ga');
+   var dimensions = {};
+
+
+    ga('create', 'UA-48587325-1', 'getstream.io', dimensions);
+    // use the enhanced link attribution plugin
+    ga('require', 'linkid');
+    ga('set', {
+      'dimension1': 'anonymous',
+      'dimension2': '',
+      'dimension3': ''
+    });
+    ga('send', 'pageview');</script></body>
+
+<!-- Mirrored from getstream.io/docs/ by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 14 Apr 2015 12:27:32 GMT -->
+</html>
